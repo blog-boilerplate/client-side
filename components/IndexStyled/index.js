@@ -25,15 +25,11 @@ export const PostCardContainer = styled.div`
   @media (max-width: 650px) {
     transform: scale(0.9);
   }
-
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     transform: scale(0.8);
   }
-  @media (max-width: 450px) {
-    transform: scale(0.7);
-  }
   @media (max-width: 400px) {
-    transform: scale(0.65);
+    transform: scale(0.7);
   }
   @media (max-width: 350px) {
     transform: scale(0.6);
