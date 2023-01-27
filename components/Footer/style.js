@@ -15,22 +15,6 @@ export const Footer = styled.div`
   bottom: 5px;
   border-radius: 10px;
 
-  .flash {
-    animation: flash 1s;
-
-    @keyframes flash {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-
   @media (max-width: 360px) {
     transform: scale(0.9);
   }
@@ -39,6 +23,7 @@ export const Footer = styled.div`
     margin-bottom: 2rem;
     background-color: white;
     border-radius: 10px;
+    -webkit-tap-highlight-color: transparent;
 
     div {
       width: 55px;
@@ -60,19 +45,7 @@ export const Icon = styled.div`
   transition: 0.1s ease-in-out;
   cursor: pointer;
   color: #ef4e23;
-  animation: flash 1s;
-
-  @keyframes flash {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  -webkit-tap-highlight-color: transparent;
 
   div {
     display: flex;
