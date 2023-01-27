@@ -56,7 +56,7 @@ export const Icon = styled.div`
 
   p {
     margin-top: -0.1rem;
-    font-size: 8pt;
+    font-size: 7.5pt;
     font-weight: 400;
   }
 `;
