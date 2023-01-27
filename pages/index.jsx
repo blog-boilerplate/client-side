@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import PostCard from "../components/PostCard";
-import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
+import { initializeApollo } from '../utils/apollo'
+
+const apolloClient = initializeApollo()
 
 export default function Home({ posts }) {
   return (
@@ -47,7 +49,7 @@ export async function getStaticProps() {
     }
   `;
 
-  const response = await client.query({
+  const response = await apolloClient.query({
     query: GET_POSTS,
   });
 

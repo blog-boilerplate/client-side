@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import { getPostByUri } from "../lib/test-data";
-import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
+import { initializeApollo } from '../utils/apollo'
+
+const apolloClient = initializeApollo()
 
 export default function SlugPage({ post }) {
   return (
@@ -49,7 +50,7 @@ export async function getStaticProps({ params }) {
       }
     }
   `;
-  const response = await client.query({
+  const response = await apolloClient.query({
     query: GET_POST_BY_URI,
     variables: {
       id: params.uri,
