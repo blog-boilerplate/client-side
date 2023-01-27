@@ -27,7 +27,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getInitialProps() {
+export async function getServerSideProps() {
   const GET_POSTS = gql`
     query GetAllPost {
       posts {
