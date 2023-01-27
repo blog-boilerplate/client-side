@@ -11,14 +11,14 @@ export default function Footer() {
   return (
     <S.Footer>
       {select == 2 ? (
-        <S.Icon className="select" onClick={() => setSelect(2)}>
+        <S.Icon className="select flash" onClick={() => setSelect(2)}>
           <div>
             <Home />
             <p>Home</p>
           </div>
         </S.Icon>
       ) : (
-        <S.Icon onClick={() => setSelect(2)}>
+        <S.Icon className="flash" onClick={() => setSelect(2)}>
           <div>
             <Home />
             <p>Home</p>
@@ -26,14 +26,14 @@ export default function Footer() {
         </S.Icon>
       )}
       {select == 1 ? (
-        <S.Icon className="select" onClick={() => setSelect(1)}>
+        <S.Icon className="select flash" onClick={() => setSelect(1)}>
           <div>
             <Category />
             <p>Categorias</p>
           </div>
         </S.Icon>
       ) : (
-        <S.Icon onClick={() => setSelect(1)}>
+        <S.Icon className="flash" onClick={() => setSelect(1)}>
           <div>
             <Category />
             <p>Categorias</p>
@@ -42,14 +42,14 @@ export default function Footer() {
       )}
 
       {select == 3 ? (
-        <S.Icon className="select" onClick={() => setSelect(3)}>
+        <S.Icon className="select flash" onClick={() => setSelect(3)}>
           <div>
             <Search />
             <p>Buscar</p>
           </div>
         </S.Icon>
       ) : (
-        <S.Icon onClick={() => setSelect(3)}>
+        <S.Icon className="flash" onClick={() => setSelect(3)}>
           <div>
             <Search />
             <p>Buscar</p>
@@ -57,14 +57,14 @@ export default function Footer() {
         </S.Icon>
       )}
       {select == 4 ? (
-        <S.Icon className="select" onClick={() => setSelect(4)}>
+        <S.Icon className="select flash" onClick={() => setSelect(4)}>
           <div>
             <BookInformation />
             <p>Sobre nós</p>
           </div>
         </S.Icon>
       ) : (
-        <S.Icon onClick={() => setSelect(4)}>
+        <S.Icon className="flash" onClick={() => setSelect(4)}>
           <div>
             <BookInformation />
             <p>Sobre nós</p>

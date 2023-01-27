@@ -15,14 +15,7 @@ export const Footer = styled.div`
   bottom: 5px;
   border-radius: 10px;
 
-  @media (max-width: 360px) {
-    transform: scale(0.9);
-  }
-
-  .select {
-    margin-bottom: 2rem;
-    background-color: white;
-    border-radius: 10px;
+  .flash {
     animation: flash 1s;
 
     @keyframes flash {
@@ -36,6 +29,16 @@ export const Footer = styled.div`
         opacity: 1;
       }
     }
+  }
+
+  @media (max-width: 360px) {
+    transform: scale(0.9);
+  }
+
+  .select {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 10px;
 
     div {
       width: 55px;
