@@ -16,7 +16,7 @@ export default function Home({ posts }) {
         </p>
 
         <S.PostCardContainer>
-          {posts.map((post) => {
+          {posts?.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
         </S.PostCardContainer>
@@ -27,7 +27,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getInitialProps() {
   const GET_POSTS = gql`
     query GetAllPost {
       posts {
