@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
-import PostCard from "../components/PostCard";
+import Footer from "../components/Footer.jsx";
+import PostCard from "../components/PostCard.jsx";
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
 
