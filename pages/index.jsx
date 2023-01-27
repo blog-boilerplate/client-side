@@ -1,29 +1,36 @@
 import Head from "next/head";
-import Footer from "../components/Footer.jsx";
-import PostCard from "../components/PostCard.jsx";
+import Footer from "../components/Footer";
+import PostCard from "../components/PostCard";
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
+import * as S from "../components/IndexStyled";
 
 export default function Home({ posts }) {
   return (
     <div className="container">
       <Head>
-        <title>Headless WP Next Starter</title>
+        <title>SuriMel Blog</title>
         <link rel="icon" href="favicon.ico"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
-        <h1 className="title">Headless WordPress Next.js Starter</h1>
+        <h1 className="title">SuriMel Blog</h1>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
 
-        <div className="grid">
+        <S.PostCardContainer>
           {posts.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
-        </div>
+        </S.PostCardContainer>
       </main>
 
       <Footer></Footer>
@@ -40,6 +47,12 @@ export async function getStaticProps() {
           content
           uri
           date
+          id
+          featuredImage {
+            node {
+              mediaItemUrl
+            }
+          }
         }
       }
     }
@@ -48,8 +61,9 @@ export async function getStaticProps() {
   const response = await client.query({
     query: GET_POSTS,
   });
-  
+
   const posts = response?.data?.posts?.nodes;
+
   return {
     props: {
       posts,

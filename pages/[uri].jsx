@@ -41,6 +41,11 @@ export async function getStaticProps({ params }) {
             lastName
           }
         }
+        featuredImage {
+          node {
+            mediaItemUrl
+          }
+        }
       }
     }
   `;
