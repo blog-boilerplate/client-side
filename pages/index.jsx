@@ -8,11 +8,6 @@ import * as S from "../components/IndexStyled";
 export default function Home({ posts }) {
   return (
     <div className="container">
-      <Head>
-        <title>SuriMel Blog</title>
-        <link rel="icon" href="favicon.ico"></link>
-      </Head>
-
       <main>
         <h1 className="title">SuriMel Blog</h1>
 
