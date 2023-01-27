@@ -15,7 +15,7 @@ export const Footer = styled.div`
   bottom: 5px;
   border-radius: 10px;
 
-  @media(max-width: 360px) {
+  @media (max-width: 360px) {
     transform: scale(0.9);
   }
 
@@ -23,6 +23,19 @@ export const Footer = styled.div`
     margin-bottom: 2rem;
     background-color: white;
     border-radius: 10px;
+    animation: flash 1s;
+
+    @keyframes flash {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     div {
       width: 55px;
@@ -43,7 +56,20 @@ export const Icon = styled.div`
   margin-top: 0.8rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
-  color: #EF4E23;
+  color: #ef4e23;
+  animation: flash 1s;
+
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   div {
     display: flex;
