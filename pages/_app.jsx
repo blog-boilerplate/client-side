@@ -1,5 +1,5 @@
 import "../styles/index.css";
-import { ApolloProvider } from "@apollo/client/react";
+import { ApolloProvider } from "@apollo/client";
 import { client } from "../lib/apollo";
 
 function MyApp({ Component, pageProps }) {
