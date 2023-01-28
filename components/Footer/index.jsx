@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Footer({ select, setSelect }) {
-  const [showButton, setShowButton] = useState(true);
+  const [showButton, setShowButton] = useState(false);
 
   let lastScrollTop = 0;
 
