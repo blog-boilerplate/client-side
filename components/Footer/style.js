@@ -13,11 +13,10 @@ export const Footer = styled.div`
     position: fixed;
     padding: 0 3rem;
     justify-content: space-around;
-    bottom: 5px;
+    bottom:  ${active ? "5px" : "-90px"};
     border-radius: 10px;
     scroll-behavior: smooth;
-    opacity: ${active ? "1" : "0"};
-    transition: 0.3s ease-in-out;
+    transition: 0.7s ease-in-out;
     pointer-events: ${active ? "all" : "none"};
 
     @media (max-width: 360px) {
