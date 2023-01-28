@@ -4,9 +4,9 @@ import { Search } from "@styled-icons/material/Search";
 import { Home } from "@styled-icons/entypo/Home";
 import { BookInformation } from "@styled-icons/fluentui-system-filled/BookInformation";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
-export default function Footer() {
-  const [select, setSelect] = useState(2);
+export default function Footer({ select, setSelect }) {
   const [showButton, setShowButton] = useState(true);
 
   let lastScrollTop = 0;
@@ -32,19 +32,23 @@ export default function Footer() {
     <>
       <S.Footer active={showButton}>
         {select == 2 ? (
-          <S.Icon className="select flash" onClick={() => setSelect(2)}>
-            <div>
-              <Home />
-              <p>Home</p>
-            </div>
-          </S.Icon>
+          <Link href="/">
+            <S.Icon className="select flash" onClick={() => setSelect(2)}>
+              <div>
+                <Home />
+                <p>Home</p>
+              </div>
+            </S.Icon>
+          </Link>
         ) : (
-          <S.Icon className="flash" onClick={() => setSelect(2)}>
-            <div>
-              <Home />
-              <p>Home</p>
-            </div>
-          </S.Icon>
+          <Link href="/">
+            <S.Icon className="flash" onClick={() => setSelect(2)}>
+              <div>
+                <Home />
+                <p>Home</p>
+              </div>
+            </S.Icon>
+          </Link>
         )}
         {select == 1 ? (
           <S.Icon className="select flash" onClick={() => setSelect(1)}>

@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import { gql } from "@apollo/client";
-import { initializeApollo } from '../utils/apollo'
+import { initializeApollo } from "../utils/apollo";
+import { useState } from "react";
+import * as S from "../components/PostStyled";
 
-const apolloClient = initializeApollo()
+const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
+  const [select, setSelect] = useState(5);
+
   return (
-    <div>
+    <S.PostContainer>
       <Head>
         <title>Headless WP Next Starter</title>
         <link rel="icon" href="favicon.ico"></link>
@@ -25,8 +29,8 @@ export default function SlugPage({ post }) {
         <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
       </main>
 
-      <Footer></Footer>
-    </div>
+      <Footer select={select} setSelect={setSelect}></Footer>
+    </S.PostContainer>
   );
 }
 

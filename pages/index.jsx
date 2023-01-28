@@ -3,11 +3,14 @@ import Footer from "../components/Footer";
 import PostCard from "../components/PostCard";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
-import { initializeApollo } from '../utils/apollo'
+import { initializeApollo } from "../utils/apollo";
+import { useState } from "react";
 
-const apolloClient = initializeApollo()
+const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
+  const [select, setSelect] = useState(2);
+
   return (
     <div className="container">
       <main>
@@ -24,7 +27,7 @@ export default function Home({ posts }) {
         </S.PostCardContainer>
       </main>
 
-      <Footer></Footer>
+      <Footer select={select} setSelect={setSelect}></Footer>
     </div>
   );
 }
