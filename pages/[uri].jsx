@@ -17,7 +17,7 @@ export default function SlugPage({ post }) {
         <link rel="icon" href="favicon.ico"></link>
       </Head>
 
-      <main>
+      <S.Main>
         <div className="siteHeader">
           <h1 className="title">{post.title}</h1>
           <p>
@@ -26,8 +26,10 @@ export default function SlugPage({ post }) {
             &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
           </p>
         </div>
-        <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
-      </main>
+        <S.Article
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></S.Article>
+      </S.Main>
 
       <Footer select={select} setSelect={setSelect}></Footer>
     </S.PostContainer>
