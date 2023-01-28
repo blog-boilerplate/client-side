@@ -11,7 +11,22 @@
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-scroll": "^1.8.9",
     "styled-components": "^5.3.6",
     "styled-icons": "^10.47.0"
-  }
+  },
+  "name": "client-side",
+  "description": "This crash course is a part of WP Engine's Headless Developer Roadmap. It covers the basics of creating a headless WordPress site using Next.js and WPGraphQL. You can find a step-by-step guide on the WP Engine Developer Relations site. By the end of the course, you will be able to:\r - Create static and dynamic routes in Next.js\r - Use the GraphiQL IDE to compose GraphQL queries\r - Use Apollo Client fetch data in your app\r - Choose appropriate Next.js rendering methods based on your content",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blog-boilerplate/client-side.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blog-boilerplate/client-side/issues"
+  },
+  "homepage": "https://github.com/blog-boilerplate/client-side#readme"
 }

@@ -1,39 +1,45 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Footer = styled.div`
-  height: 52px;
-  width: 95%;
-  min-width: 330px;
-  background-color: #fff;
-  gap: 2em;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  padding: 0 3rem;
-  justify-content: space-around;
-  bottom: 5px;
-  border-radius: 10px;
-
-  @media (max-width: 360px) {
-    transform: scale(0.9);
-  }
-
-  .select {
-    margin-bottom: 2rem;
-    background-color: white;
+  ${({ active }) => css`
+    height: 52px;
+    width: 95%;
+    min-width: 330px;
+    background-color: #fff;
+    gap: 2em;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0 3rem;
+    justify-content: space-around;
+    bottom: 5px;
     border-radius: 10px;
-    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    opacity: ${active ? "1" : "0"};
+    transition: 0.7s ease-in-out;
+    pointer-events: ${active ? "all" : "none"};
 
-    div {
-      width: 55px;
-      height: 60px;
+    @media (max-width: 360px) {
+      transform: scale(0.9);
     }
-  }
 
-  svg {
-    width: 30px;
-  }
+    .select {
+      margin-bottom: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      -webkit-tap-highlight-color: transparent;
+
+      div {
+        width: 55px;
+        height: 60px;
+      }
+    }
+
+    svg {
+      width: 30px;
+    }
+  `}
 `;
 
 export const Icon = styled.div`
