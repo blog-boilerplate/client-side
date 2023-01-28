@@ -17,7 +17,7 @@ export const Footer = styled.div`
     border-radius: 10px;
     scroll-behavior: smooth;
     opacity: ${active ? "1" : "0"};
-    transition: 0.7s ease-in-out;
+    transition: 0.3s ease-in-out;
     pointer-events: ${active ? "all" : "none"};
 
     @media (max-width: 360px) {
