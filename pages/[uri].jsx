@@ -36,6 +36,8 @@ export default function SlugPage({ post }) {
   );
 }
 
+//dsf
+
 export async function getStaticProps({ params }) {
   const GET_POST_BY_URI = gql`
     query GetPostByURI($id: ID!) {
