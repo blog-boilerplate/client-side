@@ -35,3 +35,17 @@ export const PostCardContainer = styled.div`
     transform: scale(0.6);
   }
 `;
+
+export const Container = styled.div`
+  padding: 0rem 0.5rem;
+
+
+  main {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 120vh;
+    }
+`;

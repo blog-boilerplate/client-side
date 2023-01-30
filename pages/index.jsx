@@ -12,14 +12,9 @@ export default function Home({ posts }) {
   const [select, setSelect] = useState(2);
 
   return (
-    <div className="container">
+    <S.Container>
+      <h1>Suri Mel</h1>
       <main>
-        <h1 className="title">SuriMel Blog</h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <S.PostCardContainer>
           {posts?.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
@@ -28,7 +23,7 @@ export default function Home({ posts }) {
       </main>
 
       <Footer select={select} setSelect={setSelect}></Footer>
-    </div>
+    </S.Container>
   );
 }
 
