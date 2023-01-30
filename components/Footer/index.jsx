@@ -52,19 +52,23 @@ export default function Footer({ select, setSelect }) {
           </Link>
         )}
         {select == 1 ? (
-          <S.Icon className="select flash" onClick={() => setSelect(1)}>
-            <div>
-              <Place />
-              <p>Categorias</p>
-            </div>
-          </S.Icon>
+          <Link href="/category">
+            <S.Icon className="select flash" onClick={() => setSelect(1)}>
+              <div>
+                <Place />
+                <p>Categorias</p>
+              </div>
+            </S.Icon>
+          </Link>
         ) : (
-          <S.Icon className="flash" onClick={() => setSelect(1)}>
-            <div>
-              <Place />
-              <p>Lugares</p>
-            </div>
-          </S.Icon>
+          <Link href="/category">
+            <S.Icon className="flash" onClick={() => setSelect(1)}>
+              <div>
+                <Place />
+                <p>Lugares</p>
+              </div>
+            </S.Icon>
+          </Link>
         )}
 
         {select == 3 ? (
