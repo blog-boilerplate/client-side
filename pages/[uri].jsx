@@ -18,13 +18,13 @@ export default function SlugPage({ post }) {
       </Head>
 
       <S.Main>
-        <div className="siteHeader">
-          <h1 className="title">{post.title}</h1>
-          <p>
+        <div>
+          <h1>{post.title}</h1>
+          <S.Date>
             ✍️ &nbsp;&nbsp;
             {`${post.author.node.firstName} ${post.author.node.lastName}`} | 🗓️
             &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
-          </p>
+          </S.Date>
         </div>
         <S.Article
           dangerouslySetInnerHTML={{ __html: post.content }}

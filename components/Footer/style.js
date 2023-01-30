@@ -5,7 +5,7 @@ export const Footer = styled.div`
     height: 52px;
     width: 95%;
     min-width: 330px;
-    background-color: #fff;
+    background-color: #ea6e4f;
     gap: 2em;
     max-width: 500px;
     display: flex;
@@ -26,7 +26,7 @@ export const Footer = styled.div`
 
     .select {
       margin-bottom: 2rem;
-      background-color: white;
+      background-color: #ea6e4f;
       border-radius: 10px;
       -webkit-tap-highlight-color: transparent;
 
@@ -50,7 +50,7 @@ export const Icon = styled.div`
   margin-top: 0.8rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
-  color: #ef4e23;
+  color: #fff;
   -webkit-tap-highlight-color: transparent;
 
   div {

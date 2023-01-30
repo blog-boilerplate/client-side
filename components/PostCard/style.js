@@ -12,6 +12,8 @@ export const PostCard = styled.div`
 `;
 export const TitlePost = styled.h2`
   font-size: 16pt;
+  max-width: 472px;
+  font-weight: 500;
 `;
 export const PostCardContainer = styled.div`
   cursor: pointer;
