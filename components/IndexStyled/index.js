@@ -8,6 +8,7 @@ export const PostCardContainer = styled.div`
 
   @media (max-width: 1060px) {
     transform: scale(0.8);
+    height: 1px;
   }
   @media (max-width: 850px) {
     transform: scale(0.7);
@@ -37,15 +38,12 @@ export const PostCardContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 0rem 0.5rem;
-
-
-  main {
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-height: 120vh;
-    }
+  padding: 1rem 0.5rem;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: auto;
+  margin-bottom: 3rem;
 `;

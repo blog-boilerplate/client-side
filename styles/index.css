@@ -20,12 +20,3 @@ body {
      -webkit-text-fill-color: transparent;
      text-align: center;
  }
- 
-.container {
-    min-height: 100vh;
-    padding: 5rem 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}

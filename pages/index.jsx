@@ -12,18 +12,18 @@ export default function Home({ posts }) {
   const [select, setSelect] = useState(2);
 
   return (
-    <S.Container>
+    <>
       <h1>Suri Mel</h1>
-      <main>
+      <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
         </S.PostCardContainer>
-      </main>
 
-      <Footer select={select} setSelect={setSelect}></Footer>
-    </S.Container>
+        <Footer select={select} setSelect={setSelect}></Footer>
+      </S.Container>
+    </>
   );
 }
 
