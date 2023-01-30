@@ -1,5 +1,6 @@
 import * as S from "./style";
 import { Category } from "@styled-icons/boxicons-regular/Category";
+import { Place } from "@styled-icons/material-rounded/Place";
 import { Search } from "@styled-icons/material/Search";
 import { Home } from "@styled-icons/entypo/Home";
 import { BookInformation } from "@styled-icons/fluentui-system-filled/BookInformation";
@@ -53,15 +54,15 @@ export default function Footer({ select, setSelect }) {
         {select == 1 ? (
           <S.Icon className="select flash" onClick={() => setSelect(1)}>
             <div>
-              <Category />
+              <Place />
               <p>Categorias</p>
             </div>
           </S.Icon>
         ) : (
           <S.Icon className="flash" onClick={() => setSelect(1)}>
             <div>
-              <Category />
-              <p>Categorias</p>
+              <Place />
+              <p>Lugares</p>
             </div>
           </S.Icon>
         )}
