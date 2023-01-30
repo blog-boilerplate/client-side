@@ -44,6 +44,7 @@ export async function getStaticProps({ params }) {
       post(id: $id, idType: URI) {
         title
         content
+        date
         author {
           node {
             firstName

@@ -48,4 +48,6 @@ export const Main = styled.main`
 
 export const Date = styled.p`
   text-align: center;
+  font-weight: 400;
+  color: #939393;
 `;
