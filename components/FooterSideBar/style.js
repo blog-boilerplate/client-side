@@ -5,7 +5,7 @@ export const Footer = styled.div`
     height: 52px;
     width: 95%;
     min-width: 330px;
-    background-color: #ea6e4f;
+    background-color: #167ac7;
     gap: 2em;
     max-width: 500px;
     display: flex;
@@ -26,7 +26,7 @@ export const Footer = styled.div`
 
     .select {
       margin-bottom: 2rem;
-      background-color: #ea6e4f;
+      background-color: #167ac7;
       border-radius: 10px;
       -webkit-tap-highlight-color: transparent;
 
