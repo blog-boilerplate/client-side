@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
+import FooterSideBar from "../components/FooterSideBar";
 import PostCard from "../components/PostCard";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
@@ -13,17 +13,17 @@ export default function Home({ posts }) {
 
   return (
     <>
-        <h1>Suri Mel</h1>
+      <img src="lifenomade-icon.png" alt="" />
       <S.Container>
-
         <S.PostCardContainer>
           {posts?.map((post) => {
-            return <PostCard key={post.uri} post={post}></PostCard>;
+            return <PostCard key={post.uri} post={post}/>;
           })}
         </S.PostCardContainer>
 
-        <Footer select={select} setSelect={setSelect}></Footer>
+        <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
+      <S.FooterSpace />
     </>
   );
 }
@@ -53,7 +53,6 @@ export async function getServerSideProps() {
   });
 
   const posts = response?.data?.posts?.nodes;
-console.log(posts)
   return {
     props: {
       posts,

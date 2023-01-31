@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../../components/Footer";
+import Footer from "../../components/FooterSideBar";
 import PostCardCategory from "../../components/PostCardCategory";
 import { gql } from "@apollo/client";
 import * as S from "../../components/IndexStyled";
@@ -17,9 +17,10 @@ export default function Home({ posts }) {
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {
-            return <PostCardCategory key={post.uri} post={post}></PostCardCategory>;
+            return (
+              <PostCardCategory key={post.uri} post={post}></PostCardCategory>
+            );
           })}
-
         </S.PostCardContainer>
 
         <Footer select={select} setSelect={setSelect}></Footer>

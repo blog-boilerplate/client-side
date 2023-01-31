@@ -19,7 +19,7 @@ export const Footer = styled.div`
     opacity: ${active ? "1" : "0"};
     transition: 0.3s ease-in-out;
     pointer-events: ${active ? "all" : "none"};
-
+    
     @media (max-width: 360px) {
       transform: scale(0.9);
     }

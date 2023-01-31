@@ -1,22 +1,29 @@
-
 html,
 body {
-    background-color: #fafafa;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    --eggplant-gradient: #ef4e23;
+  box-sizing: border-box;
+  --eggplant-gradient: #ef4e23;
 }
- h1 {
-     background: var(--eggplant-gradient);
-     background-clip: text;
-     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     -moz-text-fill-color: transparent;
-     -webkit-text-fill-color: transparent;
-     text-align: center;
- }
+h1 {
+  background: var(--eggplant-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}

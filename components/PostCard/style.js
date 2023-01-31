@@ -10,11 +10,19 @@ export const PostCard = styled.div`
     background-size: cover;
   `}
 `;
+
 export const TitlePost = styled.h2`
   font-size: 16pt;
   max-width: 472px;
   font-weight: 500;
 `;
+
 export const PostCardContainer = styled.div`
   cursor: pointer;
+
+  &:last-child {
+    h2 {
+      margin-bottom: 6rem;
+    }
+  }
 `;

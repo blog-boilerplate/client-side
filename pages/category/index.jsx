@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../../components/Footer";
+import FooterSideBar from "../../components/FooterSideBar";
 import { gql } from "@apollo/client";
 import * as S from "../../components/IndexStyled";
 import { initializeApollo } from "../../utils/apollo";
@@ -21,7 +21,7 @@ export default function Home({ posts }) {
           })}
         </S.PostCardContainer>
 
-        <Footer select={select} setSelect={setSelect}></Footer>
+        <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>
   );

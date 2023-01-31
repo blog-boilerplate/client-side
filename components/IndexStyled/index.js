@@ -5,11 +5,13 @@ export const PostCardContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px 50px;
   transition: 0.5s;
+  height: auto;
 
   @media (max-width: 1060px) {
     transform: scale(0.8);
     height: 1px;
   }
+
   @media (max-width: 850px) {
     transform: scale(0.7);
   }
@@ -31,6 +33,7 @@ export const PostCardContainer = styled.div`
   }
   @media (max-width: 400px) {
     transform: scale(0.7);
+    height: 1px;
   }
   @media (max-width: 350px) {
     transform: scale(0.6);
@@ -44,6 +47,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height: auto;
-  margin-bottom: 3rem;
+  box-sizing: border-box;
 `;
+
+export const FooterSpace = styled.div``;

@@ -7,7 +7,7 @@ import { BookInformation } from "@styled-icons/fluentui-system-filled/BookInform
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Footer({ select, setSelect }) {
+export default function FooterSideBar({ select, setSelect }) {
   const [showButton, setShowButton] = useState(false);
 
   let lastScrollTop = 0;

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
+import FooterSideBar from "../components/FooterSideBar";
 import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
 import { useState } from "react";
@@ -31,7 +31,7 @@ export default function SlugPage({ post }) {
         ></S.Article>
       </S.Main>
 
-      <Footer select={select} setSelect={setSelect}></Footer>
+      <FooterSideBar select={select} setSelect={setSelect} />
     </S.PostContainer>
   );
 }
@@ -65,7 +65,6 @@ export async function getStaticProps({ params }) {
       id: params.uri,
     },
   });
-
 
   const post = response?.data?.post;
   return {
