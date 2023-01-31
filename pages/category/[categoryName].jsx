@@ -17,7 +17,6 @@ export default function Home({ posts }) {
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {
-            console.log(post.node.uri)
             return <PostCardCategory key={post.uri} post={post}></PostCardCategory>;
           })}
 

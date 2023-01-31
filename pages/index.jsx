@@ -18,7 +18,6 @@ export default function Home({ posts }) {
 
         <S.PostCardContainer>
           {posts?.map((post) => {
-            console.log(post)
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
         </S.PostCardContainer>

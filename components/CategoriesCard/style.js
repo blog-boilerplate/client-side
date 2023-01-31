@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 
 export const ContainerCard = styled.div`
   ${({ city }) => css`
-    width: 400px;
-    height: 50px;
+    width: 470px;
+    height: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

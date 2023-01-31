@@ -56,7 +56,7 @@ export default function Footer({ select, setSelect }) {
             <S.Icon className="select flash" onClick={() => setSelect(1)}>
               <div>
                 <Place />
-                <p>Categorias</p>
+                <p>Lugares</p>
               </div>
             </S.Icon>
           </Link>
