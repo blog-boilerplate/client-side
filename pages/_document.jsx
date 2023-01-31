@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <title>SuriMel Blog</title>
+      <title>Life Nômade</title>
       <link rel="icon" href="favicon.ico"></link>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

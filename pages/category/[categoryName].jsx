@@ -10,7 +10,7 @@ import { useState } from "react";
 const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
-  const [select, setSelect] = useState(2);
+  const [select, setSelect] = useState(5);
 
   return (
     <>

@@ -10,13 +10,15 @@ const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
   const [select, setSelect] = useState(5);
+  const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || '';
+
 
   return (
     <>
       <Logo />
       <S.PostContainer>
         <Head>
-          <title>Headless WP Next Starter</title>
+          <title>Life Nômade - {post.title}</title>
           <link rel="icon" href="favicon.ico"></link>
         </Head>
         <S.Image src={post.featuredImage.node.mediaItemUrl} alt="" />

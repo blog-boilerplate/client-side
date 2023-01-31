@@ -87,19 +87,23 @@ export default function FooterSideBar({ select, setSelect }) {
           </S.Icon>
         )}
         {select == 4 ? (
-          <S.Icon className="select flash" onClick={() => setSelect(4)}>
-            <div>
-              <BookInformation />
-              <p>Sobre nós</p>
-            </div>
-          </S.Icon>
+          <Link href="/sobre">
+            <S.Icon className="select flash" onClick={() => setSelect(4)}>
+              <div>
+                <BookInformation />
+                <p>Sobre nós</p>
+              </div>
+            </S.Icon>
+          </Link>
         ) : (
-          <S.Icon className="flash" onClick={() => setSelect(4)}>
-            <div>
-              <BookInformation />
-              <p>Sobre nós</p>
-            </div>
-          </S.Icon>
+          <Link href="/sobre">
+            <S.Icon className="flash" onClick={() => setSelect(4)}>
+              <div>
+                <BookInformation />
+                <p>Sobre nós</p>
+              </div>
+            </S.Icon>
+          </Link>
         )}
       </S.Footer>
     </>
