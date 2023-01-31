@@ -1,5 +1,6 @@
 import Head from "next/head";
 import FooterSideBar from "../components/FooterSideBar";
+import Logo from "../components/Logo";
 import PostCard from "../components/PostCard";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
@@ -13,7 +14,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <img src="lifenomade-icon.png" alt="" />
+      <Logo />
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {

@@ -42,7 +42,12 @@ export const Main = styled.main`
   padding: 0 1rem;
 
   h1 {
+    color: #167AC8;
+    margin-top: -3rem;
     font-size: 20pt;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 0.5rem 1rem;
   }
 `;
 
@@ -50,4 +55,11 @@ export const Date = styled.p`
   text-align: center;
   font-weight: 400;
   color: #939393;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
 `;

@@ -9,11 +9,27 @@ export const ContainerCard = styled.div`
     align-items: center;
     padding-left: 1rem;
     cursor: pointer;
+      no-repeat center;
     background: ${
       city == "França" &&
       "url(https://i.imgur.com/NSEutJw.jpg) no-repeat center"
     };
-      no-repeat center;
+    background: ${
+      city == "Alemanha" &&
+      "url(https://i.imgur.com/FJubzvG.jpg) no-repeat center"
+    };
+    background: ${
+      city == "Brasil" &&
+      "url(https://i.imgur.com/QflZVQo.jpg) no-repeat center"
+    };
+    background: ${
+      city == "Itália" &&
+      "url(https://i.imgur.com/SQYzzs9.jpg) no-repeat center"
+    };
+    background: ${
+      city == "Inglaterra" &&
+      "url(https://i.imgur.com/EYyDI5C.jpg) no-repeat center"
+    };
       border-radius: 10px;
     background-size: cover;
 

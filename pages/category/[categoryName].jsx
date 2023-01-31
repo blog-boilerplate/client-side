@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../../components/FooterSideBar";
 import PostCardCategory from "../../components/PostCardCategory";
+import Logo from "../../components/Logo";
 import { gql } from "@apollo/client";
 import * as S from "../../components/IndexStyled";
 import { initializeApollo } from "../../utils/apollo";
@@ -13,7 +14,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <h1>Suri Mel</h1>
+      <Logo />
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {

@@ -5,6 +5,7 @@ import * as S from "../../components/IndexStyled";
 import { initializeApollo } from "../../utils/apollo";
 import { useState } from "react";
 import CategoriesCard from "../../components/CategoriesCard";
+import Logo from "../../components/Logo";
 
 const apolloClient = initializeApollo();
 
@@ -13,7 +14,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <h1>Suri Mel</h1>
+      <Logo />
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {
