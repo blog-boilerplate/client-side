@@ -10,8 +10,7 @@ const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
   const [select, setSelect] = useState(5);
-  const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || '';
-
+  const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
   return (
     <>
@@ -22,7 +21,6 @@ export default function SlugPage({ post }) {
           <link rel="icon" href="favicon.ico"></link>
         </Head>
         <S.Image src={post.featuredImage.node.mediaItemUrl} alt="" />
-
         <S.Main>
           <div>
             <h1>{post.title}</h1>

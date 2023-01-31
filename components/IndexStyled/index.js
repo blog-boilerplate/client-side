@@ -42,7 +42,7 @@ export const PostCardContainer = styled.div`
 
 export const Container = styled.div`
   padding: 1rem 0.5rem;
-  min-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,3 +51,8 @@ export const Container = styled.div`
 `;
 
 export const FooterSpace = styled.div``;
+
+export const Paragraph = styled.p`
+  max-width: 700px;
+  text-align: justify;
+`;

@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function FooterSideBar({ select, setSelect }) {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(true);
 
   let lastScrollTop = 0;
 
