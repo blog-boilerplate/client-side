@@ -66,6 +66,7 @@ export async function getStaticProps({ params }) {
     },
   });
 
+
   const post = response?.data?.post;
   return {
     props: {

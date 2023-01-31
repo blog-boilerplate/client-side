@@ -13,10 +13,12 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <h1>Suri Mel</h1>
+        <h1>Suri Mel</h1>
       <S.Container>
+
         <S.PostCardContainer>
           {posts?.map((post) => {
+            console.log(post)
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
         </S.PostCardContainer>
@@ -52,7 +54,7 @@ export async function getServerSideProps() {
   });
 
   const posts = response?.data?.posts?.nodes;
-
+console.log(posts)
   return {
     props: {
       posts,

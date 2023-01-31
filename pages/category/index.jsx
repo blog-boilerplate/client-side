@@ -17,7 +17,7 @@ export default function Home({ posts }) {
       <S.Container>
         <S.PostCardContainer>
           {posts?.map((post) => {
-            return <CategoriesCard key={post.uri} post={post}></CategoriesCard>;
+            return <CategoriesCard key={post.id} post={post}></CategoriesCard>;
           })}
         </S.PostCardContainer>
 
