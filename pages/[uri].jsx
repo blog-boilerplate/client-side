@@ -10,7 +10,7 @@ const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
   const [select, setSelect] = useState(5);
-  // const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
+  const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
   return (
     <>
@@ -19,6 +19,13 @@ export default function SlugPage({ post }) {
         <Head>
           <title>Life Nômade - {post.title}</title>
           <link rel="icon" href="favicon.ico"></link>
+          <meta name="description" content={firstParagraph} />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:description" content={firstParagraph} />
+          <meta
+            property="og:image"
+            content={post.featuredImage.node.mediaItemUrl}
+          />
         </Head>
         <S.Image src={post.featuredImage.node.mediaItemUrl} alt="" />
         <S.Main>
