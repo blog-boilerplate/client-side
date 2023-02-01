@@ -19,7 +19,7 @@ export default function Home({ posts }) {
         setPostCount(postCount + 5);
       }
     };
-  });
+  }, []);
 
   return (
     <>

@@ -8,6 +8,10 @@ export const PostCardContainer = styled.div`
   transition: 0.5s;
   height: auto;
 
+  :first-child {
+    margin-bottom: 10rem;
+  }
+
   @media (max-width: 1060px) {
     grid-gap: 50px 20px;
 
