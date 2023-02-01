@@ -15,7 +15,6 @@ export default function Home() {
       <S.Container>
         <S2.Main>
           <HeadLine title="Sobre Nós" />
-          <FooterSideBar select={select} setSelect={setSelect} />
           <S.Paragraph>
             Oi, o Life Nômade é um blog que quer garatir a experiência do
             usuário, tanto em seu designer voltado para uma navegação suave, sem
@@ -33,6 +32,7 @@ export default function Home() {
           </S.Paragraph>
           <Contact />
         </S2.Main>
+        <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>
   );
