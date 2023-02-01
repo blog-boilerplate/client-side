@@ -10,9 +10,12 @@ export default function InputSearch({ value, change }) {
     e.preventDefault();
     const { value } = e.target;
 
+    if (value == "") {
+      setData([]);
+    }
+
     if (!value) {
       return;
-      setData([]);
     }
 
     const url = `https://suriblogcms.online/wp-json/wp/v2/posts?search=${value}`;
@@ -31,9 +34,9 @@ export default function InputSearch({ value, change }) {
   return (
     <S.Container>
       <S.Form>
-        <label htmlFor="search">Pesquisar...</label>
         <input
           name="search"
+          placeholder="Pesquisar..."
           id="search"
           value={value}
           onChange={handleInputChange}

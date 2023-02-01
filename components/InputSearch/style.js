@@ -5,11 +5,6 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-  label {
-    display: block;
-    margin-bottom: 0.8em;
-    font-weight: bold;
-  }
 
   input {
     color: inherit;
@@ -17,12 +12,15 @@ export const Form = styled.form`
     padding: 0.2em;
     border: none;
     border-bottom: solid 2px rgba(255, 255, 255, 0.2);
-    border-radius: 8px 8px 0 0;
-    font-size: 3.5rem;
-    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    min-width: 350px;
     width: 100%;
+    height: 50px;
     outline: none;
     transition: background-color 0.5s ease-in;
+    padding-left: 1rem;
 
     :focus {
       background-color: #00000010;
