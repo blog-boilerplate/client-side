@@ -5,19 +5,28 @@ import PostCard from "../components/PostCard";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
   const [select, setSelect] = useState(2);
+  const [postCount, setPostCount] = useState(5);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+        setPostCount(postCount + 5);
+      }
+    };
+  });
 
   return (
     <>
       <Logo />
       <S.Container>
         <S.PostCardContainer>
-          {posts?.map((post) => {
+        {posts?.slice(0, postCount).map((post) => {
             return <PostCard key={post.uri} post={post}/>;
           })}
         </S.PostCardContainer>
