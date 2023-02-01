@@ -10,7 +10,7 @@ const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
   const [select, setSelect] = useState(5);
-  const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
+  // const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
   return (
     <>

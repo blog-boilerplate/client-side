@@ -18,7 +18,7 @@ export default function InputSearch({ value, change }) {
       return;
     }
 
-    const url = `https://suriblogcms.online/wp-json/wp/v2/posts?search=${value}`;
+    const url = `https://suriblogcms.online/wp-json/wp/v2/posts?search=${value}&per_page=5`;
 
     fetch(url)
       .then((res) => res.json())
