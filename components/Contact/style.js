@@ -85,6 +85,7 @@ export const FormInputs = styled.div`
 
   p {
     text-align: center;
+    font-size: 10pt;
     color: red;
     margin: -0.3rem 0;
   }
@@ -92,7 +93,7 @@ export const FormInputs = styled.div`
   input {
     width: 100%;
     height: 3rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     border-radius: 0.5rem;
     border: 1px solid gray;
 
@@ -105,7 +106,7 @@ export const FormInputs = styled.div`
 export const Textarea = styled.textarea`
   height: 15rem;
   resize: vertical;
-  padding: 1rem 2rem;
+  padding: 1rem;
   
 `
 export const Check = styled.div`

@@ -22,7 +22,7 @@ export const PostCardContainer = styled.div`
 
   &:last-child {
     h2 {
-      margin-bottom: 6rem;
+      margin-bottom: 10rem;
     }
   }
 `;

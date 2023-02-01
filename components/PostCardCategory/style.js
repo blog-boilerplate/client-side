@@ -17,4 +17,9 @@ export const TitlePost = styled.h2`
 `;
 export const PostCardContainer = styled.div`
   cursor: pointer;
+  &:last-child {
+    h2 {
+      margin-bottom: 10rem;
+    }
+  }
 `;

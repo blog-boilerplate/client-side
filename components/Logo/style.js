@@ -7,4 +7,8 @@ export const Logo = styled.div`
   margin: 0 auto;
   padding: 1rem 2rem;
   cursor: pointer;
+
+  @media(max-width: 450px) {
+    max-width: 280px;
+  }
 `;
