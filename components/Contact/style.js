@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #054B81;
+    color: #547AA5;
   }
 `
 export const FooterContainer = styled.div`

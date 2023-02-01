@@ -16,13 +16,13 @@ export const TitlePost = styled.h2`
   position: absolute;
   font-size: 14pt;
   max-width: 472px;
-  font-weight: 300;
+  font-weight: 400;
   margin: auto;
   bottom: -15px;
   color: #ffffff;
   padding: 0.2rem 0.5rem;
   max-width: 90%;
-  background-color: #547aa5;
+  background-color: #31577f;
 `;
 
 export const PostCardContainer = styled.div`

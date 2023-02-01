@@ -14,7 +14,7 @@ export const Container = styled.div`
   gap: 0.7rem;
   font-size: 22pt;
   clip-path: polygon(100% 1%, 91% 47%, 100% 98%, 0% 100%, 0 49%, 0% 0%);
-  background-color: #177ac8;
+  background-color: #547AA5;
   width: 14rem;
   height: 3rem;
 `;

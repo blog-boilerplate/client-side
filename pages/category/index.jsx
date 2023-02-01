@@ -1,7 +1,7 @@
 import Head from "next/head";
 import FooterSideBar from "../../components/FooterSideBar";
 import { gql } from "@apollo/client";
-import * as S from "../../components/IndexStyled";
+import * as S from "../../components/CategoryStyled";
 import { initializeApollo } from "../../utils/apollo";
 import { useState } from "react";
 import CategoriesCard from "../../components/CategoriesCard";

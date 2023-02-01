@@ -42,7 +42,7 @@ export const Main = styled.main`
   padding: 0 1rem;
 
   h1 {
-    color: #167AC8;
+    color: #31577f;
     margin-top: -3rem;
     font-size: 20pt;
     background-color: #fafafa;

@@ -3,11 +3,11 @@ body {
   background-color: #fafafa;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 * {
   box-sizing: border-box;
   --eggplant-gradient: #ef4e23;
+  font-family: "Montserrat", sans-serif;
 }
 

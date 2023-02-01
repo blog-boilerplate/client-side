@@ -48,7 +48,7 @@ export const ImageContainer = styled.div`
 export const Title = styled.h3`
   padding: 0 1rem;
   align-self: center;
-  color: #00000095;
+  color: #547AA5;
   cursor: pointer;
   font-weight: 600;
 `;

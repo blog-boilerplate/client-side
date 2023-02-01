@@ -33,8 +33,7 @@ export default function InputSearch({ value, change }) {
 
   return (
     <S.Container>
-      <S.Form>
-        <input
+        <S.Input
           name="search"
           placeholder="Pesquisar..."
           id="search"
@@ -42,7 +41,6 @@ export default function InputSearch({ value, change }) {
           onChange={handleInputChange}
           ref={inputRef}
         />
-      </S.Form>
       <SearchResults data={data} />
     </S.Container>
   );
