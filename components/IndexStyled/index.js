@@ -9,7 +9,7 @@ export const PostCardContainer = styled.div`
   height: auto;
 
   :first-child {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
 
   @media (max-width: 1060px) {

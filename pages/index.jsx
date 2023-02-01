@@ -6,6 +6,7 @@ import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
 import { useState, useEffect } from "react";
+import ButtonRender from "../components/ButtonRender";
 
 const apolloClient = initializeApollo();
 
@@ -28,7 +29,7 @@ export default function Home({ posts }) {
         </S.PostCardContainer>
 
         {displayCount < posts.length && (
-          <button style={{ marginBottom: "20rem" }} onClick={handleLoadMore}>Ver mais</button>
+          <ButtonRender handleLoadMore={handleLoadMore}/>
         )}
 
         <FooterSideBar select={select} setSelect={setSelect} />
