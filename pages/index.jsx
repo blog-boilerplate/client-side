@@ -11,25 +11,25 @@ const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
   const [select, setSelect] = useState(2);
-  const [postCount, setPostCount] = useState(5);
+  const [displayCount, setDisplayCount] = useState(5);
 
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
-        setPostCount(postCount + 5);
-      }
-    };
-  }, []);
+  const handleLoadMore = () => {
+    setDisplayCount(displayCount + 5);
+  };
 
   return (
     <>
       <Logo />
       <S.Container>
         <S.PostCardContainer>
-        {posts?.slice(0, postCount).map((post) => {
-            return <PostCard key={post.uri} post={post}/>;
+          {posts?.slice(0, displayCount).map((post) => {
+            return <PostCard key={post.uri} post={post} />;
           })}
         </S.PostCardContainer>
+
+        {displayCount < posts.length && (
+          <button style={{ marginBottom: "20rem" }} onClick={handleLoadMore}>Ver mais</button>
+        )}
 
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
