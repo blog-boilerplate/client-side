@@ -18,12 +18,12 @@ export default function Home() {
           <S.Paragraph>
             Oi, o Life Nômade é um blog que quer garatir a experiência do
             usuário, tanto em seu designer voltado para uma navegação suave, sem
-            muitas informações confundindo a cabeça do leitor, quantos em seus
+            muitas informações confundindo a cabeça do leitor, quanto em seus
             artigos, com palavras fáceis de compreender, para atingir os mais
             variados públicos.
           </S.Paragraph>
           <S.Paragraph>
-            Conteúdo de qualidade é o nosso foco, agusar a curiosidade do leitor
+            Conteúdo de qualidade é o nosso foco, aguçar a curiosidade do leitor
             é o que buscamos, e com isso trazer infomações que agreguem em seu
             cotidiano.
           </S.Paragraph>
