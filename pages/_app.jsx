@@ -1,7 +1,7 @@
-import "../styles/index.css";
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from "../utils/apollo";
 import { Toaster } from 'react-hot-toast'
+import GlobalStyles from '../styles/global'
 
 
 function MyApp({ Component, pageProps }) {
@@ -9,10 +9,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ApolloProvider client={client}>
+      <GlobalStyles />
       <Component {...pageProps} />
-      <div style={{ fontSize: "1.5rem" }}>
         <Toaster position="bottom-center" reverseOrder={false} />
-      </div>
     </ApolloProvider>
   );
 }
