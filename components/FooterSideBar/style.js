@@ -19,7 +19,7 @@ export const Footer = styled.div`
     opacity: ${active ? "1" : "0"};
     transition: 0.3s ease-in-out;
     pointer-events: ${active ? "all" : "none"};
-    
+
     @media (max-width: 360px) {
       transform: scale(0.9);
     }
@@ -29,6 +29,9 @@ export const Footer = styled.div`
       background-color: #31577f;
       border-radius: 10px;
       -webkit-tap-highlight-color: transparent;
+      tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      touch-callout: none;
 
       div {
         width: 55px;
@@ -52,6 +55,9 @@ export const Icon = styled.div`
   cursor: pointer;
   color: #fff;
   -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-callout: none;
 
   div {
     display: flex;
