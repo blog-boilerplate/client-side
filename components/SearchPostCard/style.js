@@ -3,10 +3,8 @@ import styled, { keyframes, css } from "styled-components";
 export const Ul = styled.div`
   overflow: hidden;
   border-bottom: 1px solid #00000020;
-  :last-child {
-    margin-bottom: 10rem;
-    border-bottom: 0;
-  }
+
+
 `;
 
 const rightToLeft = keyframes`
@@ -26,9 +24,7 @@ export const Container = styled.div`
     width: 100%;
     height: 50px;
     background-color: #f2f2f2;
-
     display: flex;
-
     position: relative;
     left: 100%;
     animation: ${rightToLeft} 0.5s ease-in;
@@ -48,7 +44,7 @@ export const ImageContainer = styled.div`
 export const Title = styled.h3`
   padding: 0 1rem;
   align-self: center;
-  color: #547AA5;
+  color: #547aa5;
   cursor: pointer;
   font-weight: 600;
 `;
