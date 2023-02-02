@@ -29,7 +29,7 @@ export default function Home({ posts }) {
         </S.PostCardContainer>
 
         {displayCount < posts.length && (
-          <ButtonRender handleLoadMore={handleLoadMore}/>
+          <ButtonRender handleLoadMore={handleLoadMore} />
         )}
 
         <FooterSideBar select={select} setSelect={setSelect} />
@@ -68,5 +68,6 @@ export async function getStaticProps() {
     props: {
       posts,
     },
+    revalidate: 60,
   };
 }
