@@ -12,10 +12,10 @@ const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
   const [select, setSelect] = useState(2);
-  const [displayCount, setDisplayCount] = useState(5);
+  const [displayCount, setDisplayCount] = useState(20);
 
   const handleLoadMore = () => {
-    setDisplayCount(displayCount + 5);
+    setDisplayCount(displayCount + 10);
   };
 
   return (
