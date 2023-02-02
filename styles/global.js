@@ -13,6 +13,8 @@ body {
   --eggplant-gradient: #ef4e23;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 `;
