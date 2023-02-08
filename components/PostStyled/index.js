@@ -41,6 +41,15 @@ export const Main = styled.main`
   background-color: #fafafa;
   padding: 0 1rem;
 
+  ul {
+    max-width: 700px;
+    text-align: justify;
+
+    li {
+      margin-top: 1rem;
+    }
+  }
+
   h1 {
     color: #31577f;
     margin-top: -3rem;
