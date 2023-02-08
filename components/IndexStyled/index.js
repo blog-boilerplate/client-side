@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as PostCardWrapper from "../PostCard/style";
+import * as PostCardCategoryWrapper from "../PostCardCategory/style";
 
 export const PostCardContainer = styled.div`
   display: grid;
@@ -20,11 +21,21 @@ export const PostCardContainer = styled.div`
       height: 212px;
       margin: 0 auto;
     }
+
+    ${PostCardCategoryWrapper.PostCard} {
+      width: 378px;
+      height: 212px;
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: 850px) {
-
     ${PostCardWrapper.PostCard} {
+      width: 330px;
+      height: 186px;
+      margin: 0 auto;
+    }
+    ${PostCardCategoryWrapper.PostCard} {
       width: 330px;
       height: 186px;
       margin: 0 auto;
@@ -39,11 +50,20 @@ export const PostCardContainer = styled.div`
       height: 265px;
       margin: 0 auto;
     }
+    ${PostCardCategoryWrapper.PostCard} {
+      width: 472px;
+      height: 265px;
+      margin: 0 auto;
+    }
   }
-
 
   @media (max-width: 517px) {
     ${PostCardWrapper.PostCard} {
+      width: 425px;
+      height: 239px;
+      margin: 0 auto;
+    }
+    ${PostCardCategoryWrapper.PostCard} {
       width: 425px;
       height: 239px;
       margin: 0 auto;
@@ -56,8 +76,16 @@ export const PostCardContainer = styled.div`
       height: 212px;
       margin: 0 auto;
     }
+    ${PostCardCategoryWrapper.PostCard} {
+      width: 378px;
+      height: 212px;
+      margin: 0 auto;
+    }
 
     ${PostCardWrapper.TitlePost} {
+      font-size: 11pt;
+    }
+    ${PostCardCategoryWrapper.TitlePost} {
       font-size: 11pt;
     }
   }
@@ -68,7 +96,11 @@ export const PostCardContainer = styled.div`
       height: 186px;
       margin: 0 auto;
     }
-
+    ${PostCardCategoryWrapper.PostCard} {
+      width: 330px;
+      height: 186px;
+      margin: 0 auto;
+    }
   }
   @media (max-width: 370px) {
     ${PostCardWrapper.PostCard} {
@@ -76,10 +108,12 @@ export const PostCardContainer = styled.div`
       height: 159px;
       margin: 0 auto;
     }
-
+    ${PostCardCategoryWrapper.PostCard} {
+      width: 283px;
+      height: 159px;
+      margin: 0 auto;
+    }
   }
- 
-
 `;
 
 export const Container = styled.div`

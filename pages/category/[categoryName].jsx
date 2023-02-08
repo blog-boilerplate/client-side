@@ -1,7 +1,7 @@
-import Head from "next/head";
 import Footer from "../../components/FooterSideBar";
 import PostCardCategory from "../../components/PostCardCategory";
 import Logo from "../../components/Logo";
+import Space from "../../components/Space";
 import { gql } from "@apollo/client";
 import * as S from "../../components/IndexStyled";
 import { initializeApollo } from "../../utils/apollo";
@@ -10,7 +10,7 @@ import { useState } from "react";
 const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
-  const [select, setSelect] = useState(5);
+  const [select, setSelect] = useState(6);
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function Home({ posts }) {
             );
           })}
         </S.PostCardContainer>
-
+          <Space />
         <Footer select={select} setSelect={setSelect}></Footer>
       </S.Container>
     </>
