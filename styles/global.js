@@ -11,8 +11,11 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
- 
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
+
 `;
 
 export default GlobalStyles;
