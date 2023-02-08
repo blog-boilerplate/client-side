@@ -1,6 +1,7 @@
 import Head from "next/head";
 import FooterSideBar from "../components/FooterSideBar";
 import Logo from "../components/Logo";
+import Space from "../components/Space";
 import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
 import { useState } from "react";
@@ -41,7 +42,7 @@ export default function SlugPage({ post }) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></S.Article>
         </S.Main>
-
+        <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.PostContainer>
     </>

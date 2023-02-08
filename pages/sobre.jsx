@@ -3,6 +3,7 @@ import HeadLine from "../components/HeadLine";
 import Contact from "../components/Contact";
 import Logo from "../components/Logo";
 import * as S from "../components/IndexStyled";
+import Space from "../components/Space";
 import * as S2 from "../components/PostStyled";
 import { useState } from "react";
 
@@ -31,6 +32,7 @@ export default function Home() {
             Pegue seu passaporte, sua mala e decole com a gente no conhecimento!
           </S.Paragraph>
         </S2.Main>
+        <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>

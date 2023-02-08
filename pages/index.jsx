@@ -2,6 +2,7 @@ import Head from "next/head";
 import FooterSideBar from "../components/FooterSideBar";
 import Logo from "../components/Logo";
 import PostCard from "../components/PostCard";
+import Space from "../components/Space";
 import { gql } from "@apollo/client";
 import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
@@ -31,10 +32,9 @@ export default function Home({ posts }) {
         {displayCount < posts.length && (
           <ButtonRender handleLoadMore={handleLoadMore} />
         )}
-
+        <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
-      <S.FooterSpace />
     </>
   );
 }

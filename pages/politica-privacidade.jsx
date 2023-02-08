@@ -5,6 +5,7 @@ import Logo from "../components/Logo";
 import * as S from "../components/IndexStyled";
 import * as S2 from "../components/PostStyled";
 import { useState } from "react";
+import Space from "../components/Space";
 
 export default function Home() {
   const [select, setSelect] = useState(6);
@@ -119,6 +120,7 @@ export default function Home() {
             Esta política é efetiva a partir de 11 de Janeiro 2023
           </S.Paragraph>
         </S2.Main>
+        <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>
