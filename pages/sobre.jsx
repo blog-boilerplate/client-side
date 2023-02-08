@@ -30,7 +30,6 @@ export default function Home() {
           <S.Paragraph>
             Pegue seu passaporte, sua mala e decole com a gente no conhecimento!
           </S.Paragraph>
-          <Contact />
         </S2.Main>
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>

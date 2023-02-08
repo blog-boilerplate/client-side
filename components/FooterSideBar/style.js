@@ -6,7 +6,7 @@ export const Footer = styled.div`
     width: 95%;
     min-width: 330px;
     background-color: #31577f;
-    gap: 2em;
+    gap: 0.7em;
     max-width: 500px;
     display: flex;
     align-items: center;

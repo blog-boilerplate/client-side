@@ -1,8 +1,9 @@
 import * as S from "./style";
 import { Category } from "@styled-icons/boxicons-regular/Category";
 import { Place } from "@styled-icons/material-rounded/Place";
-import { Search } from "@styled-icons/material/Search";
+import { SearchAlt } from "@styled-icons/boxicons-regular/SearchAlt";
 import { Home } from "@styled-icons/entypo/Home";
+import { PlusSquare} from "@styled-icons/boxicons-solid/PlusSquare";
 import { BookInformation } from "@styled-icons/fluentui-system-filled/BookInformation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -75,7 +76,7 @@ export default function FooterSideBar({ select, setSelect }) {
           <Link href="/search">
             <S.Icon className="select flash" onClick={() => setSelect(3)}>
               <div>
-                <Search />
+                <SearchAlt />
                 <p>Buscar</p>
               </div>
             </S.Icon>
@@ -84,7 +85,7 @@ export default function FooterSideBar({ select, setSelect }) {
           <Link href="/search">
             <S.Icon className="flash" onClick={() => setSelect(3)}>
               <div>
-                <Search />
+                <SearchAlt />
                 <p>Buscar</p>
               </div>
             </S.Icon>
@@ -105,6 +106,25 @@ export default function FooterSideBar({ select, setSelect }) {
               <div>
                 <BookInformation />
                 <p>Sobre nós</p>
+              </div>
+            </S.Icon>
+          </Link>
+        )}
+        {select == 5 ? (
+          <Link href="/mais">
+            <S.Icon className="select flash" onClick={() => setSelect(5)}>
+              <div>
+                <PlusSquare />
+                <p>Mais</p>
+              </div>
+            </S.Icon>
+          </Link>
+        ) : (
+          <Link href="/mais">
+            <S.Icon className="flash" onClick={() => setSelect(5)}>
+              <div>
+                <PlusSquare />
+                <p>Mais</p>
               </div>
             </S.Icon>
           </Link>
