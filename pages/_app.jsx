@@ -11,8 +11,7 @@ function MyApp({ Component, pageProps }) {
     <ApolloProvider client={client}>
       <GlobalStyles />
       <Component {...pageProps} />
-        <MyCookieConsent />
-
+      <MyCookieConsent />
       <Toaster position="bottom-center" reverseOrder={false} />
     </ApolloProvider>
   );
