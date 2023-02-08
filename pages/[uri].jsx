@@ -10,7 +10,7 @@ import * as S from "../components/PostStyled";
 const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
-  const [select, setSelect] = useState(5);
+  const [select, setSelect] = useState(6);
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
   return (
