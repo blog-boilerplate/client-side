@@ -16,7 +16,6 @@ const customStyles = {
 
 const customStylesButtom = {
   color: "#fafafa",
-  fontSize: "14px",
   padding: "10px 100px",
   background: "#31577F",
 };
