@@ -3,8 +3,9 @@ import HeadLine from "../components/HeadLine";
 import Logo from "../components/Logo";
 import * as S from "../components/IndexStyled";
 import * as S2 from "../components/PostStyled";
+import * as S3 from "../components/MaisLinkStyled";
 import { useState } from "react";
-import ContatoLink from "../components/ContatoLink";
+import Link from "next/link";
 
 export default function Home() {
   const [select, setSelect] = useState(5);
@@ -16,12 +17,23 @@ export default function Home() {
         <S2.Main>
           <HeadLine title="Mais" />
 
-          <ContatoLink>Contato</ContatoLink>
-
+          <S3.LinkContainer>
+            <div>
+              <Link href="/contato">
+                <p>Contato</p>
+              </Link>
+            </div>
+          </S3.LinkContainer>
+          <S3.LinkContainer>
+            <div>
+              <Link href="/politica-privacidade">
+                <p>Política de Privacidade</p>
+              </Link>
+            </div>
+          </S3.LinkContainer>
         </S2.Main>
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>
   );
 }
-
