@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 
 export const PostCard = styled.div`
   ${({ imgUrl }) => css`
-    width: 472px;
-    height: 265px;
+    width: 330.4px;
+    height: 185.5px;
     background-color: black;
     border-radius: 7px;
     background: url(${imgUrl}) no-repeat center;

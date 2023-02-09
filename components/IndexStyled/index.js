@@ -4,8 +4,8 @@ import * as PostCardCategoryWrapper from "../PostCardCategory/style";
 
 export const PostCardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 25px;
   transition: 0.5s;
   height: auto;
 
@@ -14,6 +14,8 @@ export const PostCardContainer = styled.div`
   }
 
   @media (max-width: 1060px) {
+  grid-template-columns: repeat(2, 1fr);
+
     grid-gap: 50px 20px;
 
     ${PostCardWrapper.PostCard} {
