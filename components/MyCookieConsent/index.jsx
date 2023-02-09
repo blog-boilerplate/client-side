@@ -3,7 +3,7 @@ import { CookieConsent as ReactCookieConsent } from "react-cookie-consent";
 import Link from "next/link";
 
 const customStyles = {
-  fontSize: "10px",
+  fontSize: "12px",
 };
 
 export default function MyCookieConsent() {

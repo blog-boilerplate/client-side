@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <Link href="/">
       <S.Logo>
-        <Image src="/lifenomade-icon.png" width={1389} height={318} />
+        <Image src="/lifenomade-icon.png" width={1389} height={318} alt="logo-life-nomade"/>
       </S.Logo>
     </Link>
   );
