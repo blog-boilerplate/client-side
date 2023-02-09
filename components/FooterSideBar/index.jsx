@@ -111,7 +111,7 @@ export default function FooterSideBar({ select, setSelect }) {
           </Link>
         )}
         {select == 5 ? (
-          <Link href="/mais">
+          <Link href="/mais-informacoes">
             <S.Icon className="select flash" onClick={() => setSelect(5)}>
               <div>
                 <PlusSquare />
@@ -120,7 +120,7 @@ export default function FooterSideBar({ select, setSelect }) {
             </S.Icon>
           </Link>
         ) : (
-          <Link href="/mais">
+          <Link href="/mais-informacoes">
             <S.Icon className="flash" onClick={() => setSelect(5)}>
               <div>
                 <PlusSquare />
