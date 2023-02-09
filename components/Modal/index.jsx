@@ -42,17 +42,20 @@ export default function ConfirmModal({ setModal, title }) {
     <S.Modal>
       <S.ModalContainer>
         <S.ModalHeader>
-          <h2>Grátis</h2>
+          <h2>100% Grátis</h2>
           <CloseOutline onClick={() => setModal(false)} />
         </S.ModalHeader>
         <S.Info>
           <S.InfoContainer>
+            <p style={{ fontWeight: "600", color: "darkgreen"}}>
+              Quer receber o livro 10 lugares para conhecer antes de morrer de
+              forma gratuita?
+            </p>
             <img src="https://i.imgur.com/9f3erXH.png" alt="" />
-            <p>
+            <p style={{ marginBottom: "0.1rem" }}>
               Se você adora ler sobre lugares e culturas diferentes vai se
               deliciar com essa extraordinária seleção do que existe de melhor
-              para ser visto e apreciado! <br></br> <br></br> Quer receber o
-              livro 10 lugares para conhecer antes de morrer de forma gratuita?
+              para ser visto e apreciado!
             </p>
           </S.InfoContainer>
           <p style={{ color: "green" }}>

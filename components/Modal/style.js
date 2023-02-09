@@ -30,7 +30,7 @@ export const ModalHeader = styled.div`
   h2 {
     color: white;
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 16pt;
   }
 `;
 
@@ -173,9 +173,11 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   img {
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     width: 80px;
   }
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 `;
