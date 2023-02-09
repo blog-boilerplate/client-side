@@ -13,6 +13,11 @@ export const Article = styled.article`
   justify-content: center;
   flex-direction: column;
 
+  a {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
   p {
     text-align: justify;
     font-size: 13pt;
