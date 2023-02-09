@@ -14,11 +14,28 @@ export default function Home() {
     <>
       <Logo />
       <S.Container>
+        <Head>
+          <title>Life Nômade - Mais informações</title>
+          <link rel="icon" href="favicon.ico"></link>
+          <meta
+            name="description"
+            content="Essa página contém outras duas páginas indexadas, sendo elas contato e política de privacidade"
+          />
+          <meta property="og:title" content="Life Nômade - Mais informações" />
+          <meta
+            property="og:description"
+            content="Essa página contém outras duas páginas indexadas, sendo elas contato e política de privacidade"
+          />
+          <meta property="og:image" content="https://i.imgur.com/tIte0sw.png" />
+        </Head>
         <S2.Main>
           <HeadLine title="Mais" />
 
-          <Mais namePage="Contato" linkPage="contato"/>
-          <Mais namePage="Política de Privacidade" linkPage="politica-privacidade"/>
+          <Mais namePage="Contato" linkPage="contato" />
+          <Mais
+            namePage="Política de Privacidade"
+            linkPage="politica-privacidade"
+          />
         </S2.Main>
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
