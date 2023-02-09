@@ -1,12 +1,12 @@
 import * as S from "./style";
 import Link from "next/link";
 
-export default function Mais({ namePage, linkPage }) {
+export default function Mais() {
   return (
     <S.Container>
       <div>
-        <Link href={`${linkPage}`} passHref>
-          <p>{namePage}</p>
+        <Link href="/contato">
+          <p>Contato</p>
         </Link>
       </div>
     </S.Container>

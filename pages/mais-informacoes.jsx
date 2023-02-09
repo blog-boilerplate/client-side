@@ -4,8 +4,7 @@ import Logo from "../components/Logo";
 import * as S from "../components/IndexStyled";
 import * as S2 from "../components/PostStyled";
 import { useState } from "react";
-import Link from "next/link";
-import Mais from "../components/Mais";
+import ContatoLink from "../components/ContatoLink";
 
 export default function Home() {
   const [select, setSelect] = useState(5);
@@ -17,11 +16,8 @@ export default function Home() {
         <S2.Main>
           <HeadLine title="Mais" />
 
-          <Mais namePage="Contato" linkPage="contato" />
-          <Mais
-            namePage="Política de Privacidade"
-            linkPage="politica-privacidade"
-          />
+          <ContatoLink/>
+
         </S2.Main>
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
