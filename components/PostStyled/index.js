@@ -38,7 +38,7 @@ export const Main = styled.main`
   align-items: center;
   width: 100%;
   max-width: 900px;
-  background-color: #fafafa;
+  background-color: #f2f2f2;
   padding: 0 1rem;
 
   ul {
@@ -54,7 +54,7 @@ export const Main = styled.main`
     color: #31577f;
     margin-top: -3rem;
     font-size: 20pt;
-    background-color: #fafafa;
+    background-color: #f2f2f2;
     text-align: center;
     padding: 0.5rem 1rem;
   }
@@ -71,4 +71,5 @@ export const Image = styled.img`
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
+  
 `;

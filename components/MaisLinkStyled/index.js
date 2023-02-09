@@ -13,7 +13,7 @@ export const LinkContainer = styled.div`
   }
 
   p {
-    background-color: #efefef;
+    background-color: #fff;
     width: 100%;
     font-weight: 400;
     color: #31577f;

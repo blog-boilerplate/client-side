@@ -6,6 +6,7 @@ body {
   background-color: #fafafa;
   padding: 0;
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 * {
@@ -14,6 +15,17 @@ body {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  
+}
+
+.CookieConsent {
+
+    div {
+      :nth-child(1) {
+        flex: none!important;
+      }
+    }
+
 }
 
 `;
