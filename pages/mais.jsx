@@ -14,13 +14,6 @@ export default function Home() {
     <>
       <Logo />
       <S.Container>
-        <Head>
-          <title>Life Nômade - Mais informações</title>
-          <meta
-            name="description"
-            content="Essa página contém outras duas páginas indexadas, sendo elas contato e política de privacidade"
-          />
-        </Head>
         <S2.Main>
           <HeadLine title="Mais" />
 
@@ -36,4 +29,3 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps() {}
