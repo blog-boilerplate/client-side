@@ -18,7 +18,7 @@ export default function SlugPage({ post }) {
   useEffect(() => {
     setTimeout(() => {
       setModal(true);
-    }, 10000);
+    }, 20000);
   }, []);
 
   return (
@@ -27,7 +27,7 @@ export default function SlugPage({ post }) {
       <Logo />
       <S.PostContainer>
         <Head>
-          <title>Life Nômade - {post.title}</title>
+          <title>{post.title}</title>
           <link rel="icon" href="favicon.ico"></link>
           <meta name="description" content={firstParagraph} />
           <meta property="og:title" content={post.title} />
