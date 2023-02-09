@@ -16,6 +16,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   
+ 
 }
 
 .CookieConsent {

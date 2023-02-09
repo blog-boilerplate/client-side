@@ -28,7 +28,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const GET_CATEGORIES = gql`
     query GetAllCategory {
       categories {

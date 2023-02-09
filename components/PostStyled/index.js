@@ -9,7 +9,7 @@ export const PostContainer = styled.div`
 
 export const Article = styled.article`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 
@@ -21,10 +21,11 @@ export const Article = styled.article`
   }
 
   figure {
-    margin: 0;
+    margin: 0 auto;
   }
 
   img {
+    display: block;
     max-width: 700px;
     width: 100%;
     height: auto;
@@ -57,6 +58,7 @@ export const Main = styled.main`
     background-color: #f2f2f2;
     text-align: center;
     padding: 0.5rem 1rem;
+    max-width: 700px;
   }
 `;
 
