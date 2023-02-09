@@ -5,7 +5,7 @@ import Space from "../components/Space";
 import Modal from "../components/Modal";
 import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as S from "../components/PostStyled";
 
 const apolloClient = initializeApollo();
@@ -15,9 +15,11 @@ export default function SlugPage({ post }) {
   const [modal, setModal] = useState(false);
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
-  setTimeout(() => {
-    setModal(true);
-  }, 10000);
+  useEffect(() => {
+    setTimeout(() => {
+      setModal(true);
+    }, 10000);
+  }, []);
 
   return (
     <>

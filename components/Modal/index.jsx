@@ -16,13 +16,11 @@ export default function ConfirmModal({ setModal, title }) {
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
       .post(
-        "https://formsubmit.co/ajax/avaliacaopandamarket@hotmail.com",
+        "https://formsubmit.co/ajax/lifenomadeleitores@hotmail.com",
         {
           produto: title,
           nome: name,
           email: email,
-          mensagem: message,
-          estrelas: contador,
         },
         {
           onUploadProgress: () => {
@@ -86,7 +84,7 @@ export default function ConfirmModal({ setModal, title }) {
         </S.ButtonsContainer>
         <p>* preencha o formulário para liberar o botão</p>
         <button
-          disabled={!name || !emailLegth || !message}
+          disabled={!name || !emailLegth}
           type="submit"
           onClick={handleSubmit}
         >
