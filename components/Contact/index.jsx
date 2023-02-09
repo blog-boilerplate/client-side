@@ -16,7 +16,7 @@ export default function Contato() {
     axios.defaults.headers.post['Content-Type'] = 'application/json'
     axios
       .post(
-        'https://formsubmit.co/ajax/suportepandamarket@outlook.com',
+        'https://formsubmit.co/ajax/lifenomadecontato@hotmail.com',
         {
           name: name,
           email: email,
