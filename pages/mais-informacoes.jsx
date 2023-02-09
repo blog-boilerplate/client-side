@@ -16,7 +16,7 @@ export default function Home() {
         <S2.Main>
           <HeadLine title="Mais" />
 
-          <ContatoLink/>
+          <ContatoLink>Contato</ContatoLink>
 
         </S2.Main>
         <FooterSideBar select={select} setSelect={setSelect} />
