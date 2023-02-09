@@ -7,18 +7,18 @@ const customStyles = {
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-between",
-  fontSize: "14px",
+  fontSize: "12px",
   textAlign: "center",
   background: "#fcfcfc",
   borderTop: "1px solid #00000050",
-  color: "black"
+  color: "black",
 };
 
 const customStylesButtom = {
   color: "#fafafa",
   fontSize: "14px",
   padding: "10px 100px",
-  background: "#31577F"
+  background: "#31577F",
 };
 
 export default function MyCookieConsent() {
