@@ -2,6 +2,7 @@ import Head from "next/head";
 import FooterSideBar from "../components/FooterSideBar";
 import Logo from "../components/Logo";
 import Space from "../components/Space";
+import Modal from "../components/Modal";
 import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
 import { useState } from "react";
@@ -11,10 +12,16 @@ const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
   const [select, setSelect] = useState(6);
+  const [modal, setModal] = useState(false);
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
+
+  setTimeout(() => {
+    setModal(true);
+  }, 10000);
 
   return (
     <>
+      {modal && <Modal setModal={setModal} />}
       <Logo />
       <S.PostContainer>
         <Head>
