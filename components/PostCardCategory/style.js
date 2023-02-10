@@ -14,7 +14,7 @@ export const PostCard = styled.div`
 
 export const TitlePost = styled.h2`
   position: absolute;
-  font-size: 14pt;
+  font-size: 12pt;
   max-width: 472px;
   font-weight: 400;
   margin: auto;
@@ -22,7 +22,7 @@ export const TitlePost = styled.h2`
   color: #ffffff;
   padding: 0.2rem 0.5rem;
   max-width: 90%;
-  background-color: #31577f;
+  background-color: #537AA6;
 `;
 
 export const PostCardContainer = styled.div`
