@@ -23,7 +23,7 @@ export default function Home({ posts }) {
             );
           })}
         </S.PostCardContainer>
-          <Space />
+        <Space />
         <Footer select={select} setSelect={setSelect}></Footer>
       </S.Container>
     </>
@@ -66,6 +66,7 @@ export async function getStaticProps({ params }) {
     props: {
       posts,
     },
+    revalidate: 60,
   };
 }
 
