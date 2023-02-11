@@ -13,6 +13,10 @@ export const Article = styled.article`
   justify-content: center;
   flex-direction: column;
 
+  li {
+    margin-bottom: 1rem;
+  }
+
   a {
     text-decoration: underline;
     font-weight: 600;
