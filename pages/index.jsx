@@ -42,7 +42,7 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const GET_POSTS = gql`
     query GetAllPost {
-      posts {
+      posts(first: 10000) {
         nodes {
           title
           content
