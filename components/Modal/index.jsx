@@ -47,7 +47,7 @@ export default function ConfirmModal({ setModal, title }) {
         </S.ModalHeader>
         <S.Info>
           <S.InfoContainer>
-            <p style={{ fontWeight: "600", color: "darkgreen"}}>
+            <p style={{ fontWeight: "600", color: "darkgreen" }}>
               Quer receber o livro 10 lugares para conhecer antes de morrer de
               forma gratuita?
             </p>
@@ -73,6 +73,11 @@ export default function ConfirmModal({ setModal, title }) {
             onChange={(e) => {
               setName(e.target.value);
             }}
+          />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Valeu peituda"
           />
           <S.Input
             type="email"
