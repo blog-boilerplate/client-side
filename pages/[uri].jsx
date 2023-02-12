@@ -36,6 +36,10 @@ export default function SlugPage({ post }) {
             property="og:image"
             content={post.featuredImage.node.mediaItemUrl}
           />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+          />
         </Head>
         <S.Image src={post.featuredImage.node.mediaItemUrl} alt="" />
         <S.Main>
