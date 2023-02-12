@@ -181,3 +181,11 @@ export const InfoContainer = styled.div`
   }
   margin-bottom: 1.5rem;
 `;
+
+export const MessageModal = styled.div``
+
+export const MessagePragraph = styled.p`
+  color: black!important;
+  padding: 0.5rem 0.5rem 2.2rem 0.5rem;
+  font-size: 13px!important;
+`
