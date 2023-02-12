@@ -41,12 +41,6 @@ export default function ConfirmModal({ setModal }) {
 
   return (
     <S.Modal>
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no"
-        />
-      </head>
       <S.ModalContainer>
         <S.ModalHeader>
           <h2>100% Grátis</h2>
