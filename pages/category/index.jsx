@@ -15,7 +15,7 @@ export default function Home({ posts }) {
   return (
     <>
     <Head>
-        <title>Categorias</title>
+        <title>Lugares</title>
       </Head>
       <Logo />
       <S.Container>
