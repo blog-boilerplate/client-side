@@ -1,6 +1,6 @@
 import { CloseOutline } from "@styled-icons/evaicons-outline/CloseOutline";
 import { useState } from "react";
-import { Star } from "@styled-icons/material-outlined/Star";
+import { Head } from "next/document";
 import * as S from "./style";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -41,6 +41,12 @@ export default function ConfirmModal({ setModal }) {
 
   return (
     <S.Modal>
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+      </head>
       <S.ModalContainer>
         <S.ModalHeader>
           <h2>100% Grátis</h2>
@@ -102,8 +108,8 @@ export default function ConfirmModal({ setModal }) {
           <S.MessageModal>
             <S.MessagePragraph>
               Você logo receberá seu livro. Nossa equipe irá enviá-lo assim que
-              verificar suas informações. Enquanto isso, volte a ler o
-              artigo de onde parou.
+              verificar suas informações. Enquanto isso, volte a ler o artigo de
+              onde parou.
             </S.MessagePragraph>
           </S.MessageModal>
         )}
