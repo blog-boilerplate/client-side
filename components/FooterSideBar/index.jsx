@@ -53,7 +53,7 @@ export default function FooterSideBar({ select, setSelect }) {
           </Link>
         )}
         {select == 1 ? (
-          <Link href="/category">
+          <Link href="/categorias">
             <S.Icon className="select flash" onClick={() => setSelect(1)}>
               <div>
                 <Place />
@@ -62,7 +62,7 @@ export default function FooterSideBar({ select, setSelect }) {
             </S.Icon>
           </Link>
         ) : (
-          <Link href="/category">
+          <Link href="/categorias">
             <S.Icon className="flash" onClick={() => setSelect(1)}>
               <div>
                 <Place />
@@ -73,7 +73,7 @@ export default function FooterSideBar({ select, setSelect }) {
         )}
 
         {select == 3 ? (
-          <Link href="/search">
+          <Link href="/pesquisar">
             <S.Icon className="select flash" onClick={() => setSelect(3)}>
               <div>
                 <SearchAlt />
@@ -82,7 +82,7 @@ export default function FooterSideBar({ select, setSelect }) {
             </S.Icon>
           </Link>
         ) : (
-          <Link href="/search">
+          <Link href="/pesquisar">
             <S.Icon className="flash" onClick={() => setSelect(3)}>
               <div>
                 <SearchAlt />
@@ -92,7 +92,7 @@ export default function FooterSideBar({ select, setSelect }) {
           </Link>
         )}
         {select == 4 ? (
-          <Link href="/sobre">
+          <Link href="/sobre-nos">
             <S.Icon className="select flash" onClick={() => setSelect(4)}>
               <div>
                 <BookInformation />
@@ -101,7 +101,7 @@ export default function FooterSideBar({ select, setSelect }) {
             </S.Icon>
           </Link>
         ) : (
-          <Link href="/sobre">
+          <Link href="/sobre-nos">
             <S.Icon className="flash" onClick={() => setSelect(4)}>
               <div>
                 <BookInformation />
