@@ -6,12 +6,16 @@ import * as S from "../components/IndexStyled";
 import * as S2 from "../components/PostStyled";
 import { useState } from "react";
 import Space from "../components/Space";
+import Head from "next/head";
 
 export default function Home() {
   const [select, setSelect] = useState(6);
 
   return (
     <>
+    <Head>
+        <title>Política de privacidade</title>
+      </Head>
       <Logo />
       <S.Container>
         <S2.Main>

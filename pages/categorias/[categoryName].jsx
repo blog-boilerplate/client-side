@@ -6,6 +6,7 @@ import { gql } from "@apollo/client";
 import * as S from "../../components/IndexStyled";
 import { initializeApollo } from "../../utils/apollo";
 import { useState } from "react";
+import Head from "next/head";
 
 const apolloClient = initializeApollo();
 
@@ -14,6 +15,20 @@ export default function Home({ posts }) {
 
   return (
     <>
+      <Head>
+        <title>{posts.node.title}</title>
+        <link rel="icon" href="favicon.ico"></link>
+        <meta
+          name="description"
+          content="Aqui você vai encontrar informações sobre quase todos países do mundo"
+        />
+        <meta property="og:title" content={posts.node.title} />
+        <meta property="og:description" content="Aqui você vai encontrar informações sobre quase todos países do mundo" />
+        <meta
+          property="og:image"
+          content={posts.node.featuredImage?.node.mediaItemUrl}
+        />
+      </Head>
       <Logo />
       <S.Container>
         <S.PostCardContainer>

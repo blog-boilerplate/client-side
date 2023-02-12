@@ -6,6 +6,7 @@ import { initializeApollo } from "../../utils/apollo";
 import { useState } from "react";
 import CategoriesCard from "../../components/CategoriesCard";
 import Logo from "../../components/Logo";
+import Head from "next/head";
 
 const apolloClient = initializeApollo();
 
@@ -14,6 +15,9 @@ export default function Home({ posts }) {
 
   return (
     <>
+    <Head>
+        <title>Categorias</title>
+      </Head>
       <Logo />
       <S.Container>
         <S.PostCardContainer>

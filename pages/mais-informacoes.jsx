@@ -6,12 +6,16 @@ import * as S2 from "../components/PostStyled";
 import * as S3 from "../components/MaisLinkStyled";
 import { useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   const [select, setSelect] = useState(5);
 
   return (
     <>
+    <Head>
+        <title>Mais informações</title>
+      </Head>
       <Logo />
       <S.Container>
         <S2.Main>
