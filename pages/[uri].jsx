@@ -61,7 +61,7 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-          <div data-clickadilla-banner="308660"></div>
+          <div data-clickadilla-banner="308660"/>
           <S.Article
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></S.Article>
