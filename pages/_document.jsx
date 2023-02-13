@@ -20,6 +20,10 @@ export default function Document() {
           content="Life Nômade - Blog de viagem e turismo"
         />
         <meta
+          name="p:domain_verify"
+          content="f4e739dcb17f8e979f52c26b8d3f7e7c"
+        />
+        <meta
           property="og:description"
           content="Viaje com a gente pelo mundo! Nossos relatos de viagem incluem dicas incríveis, belas fotos e experiências únicas. Junte-se a nós em uma jornada para explorar culturas, sabores e paisagens exóticas. Inspire-se e planeje sua próxima aventura."
         />
