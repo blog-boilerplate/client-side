@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <Head>
-        <script src="../etbrwzrugkec.php"></script>
+      <script type='text/javascript' src='//pl18459191.highcpmrevenuenetwork.com/cb/b2/63/cbb263b838b4aa3a918e4414c96900e2.js'></script>
         <link rel="icon" href="favicon.ico"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
