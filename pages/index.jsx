@@ -24,11 +24,6 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>Life Nômade - Blog de viagem e turismo</title>
-        <Script
-          async
-          src="https://js.wpadmngr.com/static/adManager.js"
-          data-admpid="70719"
-        />
       </Head>
       <Logo />
       <S.Container>

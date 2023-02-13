@@ -42,6 +42,7 @@ export const ModalContainer = styled.form`
   gap: 1.5rem;
   color: white;
   border-radius: 10px;
+  z-index: 999999;
 
   p {
     font-size: 8pt;

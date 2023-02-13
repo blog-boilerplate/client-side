@@ -7,6 +7,7 @@ import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
 import { useEffect, useState } from "react";
 import * as S from "../components/PostStyled";
+import Script from "next/script";
 
 const apolloClient = initializeApollo();
 
@@ -31,6 +32,11 @@ export default function SlugPage({ post }) {
       <Logo />
       <S.PostContainer>
         <Head>
+          <Script
+            async
+            src="https://js.wpadmngr.com/static/adManager.js"
+            data-admpid="70725"
+          />
           <title>{post.title}</title>
           <link rel="icon" href="favicon.ico"></link>
           <meta name="description" content={firstParagraph} />
@@ -55,7 +61,7 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-          <div data-clickadilla-banner="308658"></div>
+          <div data-clickadilla-banner="308660"></div>
           <S.Article
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></S.Article>
