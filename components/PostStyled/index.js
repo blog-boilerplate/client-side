@@ -12,6 +12,12 @@ export const Article = styled.article`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  max-width: 650px;
+
+  h2 {
+    color: #2f2f2f;
+    font-weight: 600;
+  }
 
   li {
     margin-bottom: 1rem;
@@ -26,7 +32,7 @@ export const Article = styled.article`
     text-align: justify;
     font-size: 13pt;
     font-weight: 400;
-    color: #00000095;
+    color: #2f2f2f;
   }
 
   figure {
@@ -47,7 +53,6 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 900px;
   background-color: #f2f2f2;
   padding: 0 1rem;
 
@@ -82,5 +87,4 @@ export const Image = styled.img`
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
-  
 `;
