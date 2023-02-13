@@ -37,6 +37,7 @@ export default function SlugPage({ post }) {
             src="https://js.wpadmngr.com/static/adManager.js"
             data-admpid="70725"
           />
+          <script src="/etbrwzrugkec.php"></script>
           <title>{post.title}</title>
           <link rel="icon" href="favicon.ico"></link>
           <meta name="description" content={firstParagraph} />

