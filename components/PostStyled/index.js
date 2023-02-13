@@ -55,6 +55,7 @@ export const Main = styled.main`
   width: 100%;
   background-color: #f2f2f2;
   padding: 0 1rem;
+  max-width: 900px;
 
   ul {
     max-width: 700px;
