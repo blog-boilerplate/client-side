@@ -23,6 +23,7 @@ export default function Document() {
           name="p:domain_verify"
           content="f4e739dcb17f8e979f52c26b8d3f7e7c"
         />
+        <meta name="monetag" content="598c6c161fec152d1fd30a1c7c960f7f" />
         <meta
           property="og:description"
           content="Viaje com a gente pelo mundo! Nossos relatos de viagem incluem dicas incríveis, belas fotos e experiências únicas. Junte-se a nós em uma jornada para explorar culturas, sabores e paisagens exóticas. Inspire-se e planeje sua próxima aventura."
