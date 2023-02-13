@@ -32,7 +32,7 @@ export default function SlugPage({ post }) {
       <Logo />
       <S.PostContainer>
         <Head>
-          <Script
+          <script
             async
             src="https://js.wpadmngr.com/static/adManager.js"
             data-admpid="70725"
