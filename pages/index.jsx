@@ -8,6 +8,7 @@ import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
 import { useState, useEffect } from "react";
 import ButtonRender from "../components/ButtonRender";
+import Script from "next/script";
 
 const apolloClient = initializeApollo();
 
@@ -23,6 +24,11 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>Life Nômade - Blog de viagem e turismo</title>
+        <Script
+          async
+          src="https://js.wpadmngr.com/static/adManager.js"
+          data-admpid="70719"
+        />
       </Head>
       <Logo />
       <S.Container>

@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.5",
-    "axios": "^1.3.0",
+    "axios": "^1.3.3",
     "graphql": "^16.6.0",
     "next": "^13.1.6",
     "react": "^18.2.0",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/blog-boilerplate/client-side/issues"
   },
-  "homepage": "https://github.com/blog-boilerplate/client-side#readme"
+  "homepage": "https://github.com/blog-boilerplate/client-side#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0"
+  }
 }
