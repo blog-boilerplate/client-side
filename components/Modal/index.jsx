@@ -33,6 +33,7 @@ export default function ConfirmModal({ setModal }) {
         }
       )
       .then(() => {
+        localStorage.setItem("emailSend", true)
         toast.success("E-mail recebido!");
         setCheckModal(false);
       })

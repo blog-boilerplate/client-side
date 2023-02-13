@@ -16,9 +16,13 @@ export default function SlugPage({ post }) {
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
 
   useEffect(() => {
-    setTimeout(() => {
-      setModal(true);
-    }, 20000);
+    const emailSend = localStorage.getItem("emailSend");
+    {
+      !emailSend &&
+        setTimeout(() => {
+          setModal(true);
+        }, 20000);
+    }
   }, []);
 
   return (
