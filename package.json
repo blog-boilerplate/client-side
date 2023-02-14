@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/blog-boilerplate/client-side#readme",
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
     "copy-webpack-plugin": "^11.0.0"
   }
 }
