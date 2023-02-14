@@ -56,9 +56,9 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-
           <PostHtml post={post} />
         </S.Main>
+        <div id="container-7f564882f2c60b133fa3533d5617e840"></div>
         <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.PostContainer>

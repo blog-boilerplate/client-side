@@ -32,11 +32,6 @@ export default function Home({ posts }) {
             return <PostCard key={index} post={post} />;
           })}
         </S.PostCardContainer>
-        <script
-          async="async"
-          data-cfasync="false"
-          src="//pl18459284.highcpmrevenuenetwork.com/7f564882f2c60b133fa3533d5617e840/invoke.js"
-        ></script>
         <div id="container-7f564882f2c60b133fa3533d5617e840"></div>
         {displayCount < posts.length && (
           <ButtonRender handleLoadMore={handleLoadMore} />

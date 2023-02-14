@@ -54,6 +54,11 @@ function MyApp({ Component, pageProps }) {
             content="Viaje com a gente pelo mundo! Nossos relatos de viagem incluem dicas incríveis, belas fotos e experiências únicas. Junte-se a nós em uma jornada para explorar culturas, sabores e paisagens exóticas. Inspire-se e planeje sua próxima aventura."
           />
           <meta property="og:image" content="https://i.imgur.com/tIte0sw.png" />
+          <script
+          async="async"
+          data-cfasync="false"
+          src="//pl18459284.highcpmrevenuenetwork.com/7f564882f2c60b133fa3533d5617e840/invoke.js"
+        ></script>
         </Head>
         <GlobalStyles />
         <Component {...pageProps} />

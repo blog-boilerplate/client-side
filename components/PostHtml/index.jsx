@@ -25,7 +25,7 @@ export default function SlugPage({ post }) {
       const newP = `${p}</p>`;
       if (index === 1) {
         return (
-          <div class="my-div">
+          <div className="my-div">
             <AdBanner />
           </div>
         );
