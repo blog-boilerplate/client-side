@@ -7,7 +7,7 @@ import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
 import { useEffect, useState } from "react";
 import * as S from "../components/PostStyled";
-import Script from "next/script";
+import PostHtml from "../components/PostHtml/index.jsx";
 
 const apolloClient = initializeApollo();
 
@@ -56,10 +56,8 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-          
-          <S.Article
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          ></S.Article>
+
+          <PostHtml post={post} />
         </S.Main>
         <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
@@ -70,7 +68,7 @@ export default function SlugPage({ post }) {
 
 //
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const GET_POST_BY_URI = gql`
     query GetPostByURI($id: ID!) {
       post(id: $id, idType: URI) {
@@ -103,14 +101,14 @@ export async function getStaticProps({ params }) {
     props: {
       post,
     },
-    revalidate: 10,
+    // revalidate: 10,
   };
 }
 
-export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: "blocking",
-  };
-}
+// export async function getStaticPaths() {
+//   const paths = [];
+//   return {
+//     paths,
+//     fallback: "blocking",
+//   };
+// }

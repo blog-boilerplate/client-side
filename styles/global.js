@@ -16,6 +16,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   
+  .my-div {
+    margin: 0 auto;
+  }
  
 }
 
