@@ -68,7 +68,7 @@ export default function SlugPage({ post }) {
 
 //
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
   const GET_POST_BY_URI = gql`
     query GetPostByURI($id: ID!) {
       post(id: $id, idType: URI) {
@@ -101,14 +101,14 @@ export async function getServerSideProps({ params }) {
     props: {
       post,
     },
-    // revalidate: 10,
+    revalidate: 10,
   };
 }
 
-// export async function getStaticPaths() {
-//   const paths = [];
-//   return {
-//     paths,
-//     fallback: "blocking",
-//   };
-// }
+export async function getStaticPaths() {
+  const paths = [];
+  return {
+    paths,
+    fallback: "blocking",
+  };
+}

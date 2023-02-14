@@ -24,5 +24,9 @@ export default function Banner() {
     }
   }, []);
 
-  return <div ref={banner}></div>;
+  return (
+    <>
+      <div ref={banner}></div>
+    </>
+  );
 }
