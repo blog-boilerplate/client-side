@@ -24,13 +24,20 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>Life Nômade - Blog de viagem e turismo</title>
-        <script src="../etbrwzrugkec.php"></script>
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl18459284.highcpmrevenuenetwork.com/7f564882f2c60b133fa3533d5617e840/invoke.js"
+        ></script>
       </Head>
       <Logo />
       <S.Container>
         <S.PostCardContainer>
-          {posts?.slice(0, displayCount).map((post) => {
-            return <PostCard key={post.uri} post={post} />;
+
+            <div id="container-7f564882f2c60b133fa3533d5617e840"></div>
+
+          {posts?.slice(0, displayCount).map((post, index) => {
+            return <PostCard key={index} post={post} />;
           })}
         </S.PostCardContainer>
 

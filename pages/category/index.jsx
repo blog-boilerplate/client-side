@@ -14,14 +14,14 @@ export default function Home({ posts }) {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Lugares</title>
       </Head>
       <Logo />
       <S.Container>
         <S.PostCardContainer>
-          {posts?.map((post) => {
-            return <CategoriesCard key={post.id} post={post}></CategoriesCard>;
+          {posts?.map((post, index) => {
+            return <CategoriesCard key={index} post={post}></CategoriesCard>;
           })}
         </S.PostCardContainer>
 

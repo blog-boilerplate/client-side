@@ -32,9 +32,9 @@ export default function Home({ posts }) {
       <Logo />
       <S.Container>
         <S.PostCardContainer>
-          {posts?.map((post) => {
+          {posts?.map((post, index) => {
             return (
-              <PostCardCategory key={post.uri} post={post}></PostCardCategory>
+              <PostCardCategory key={index} post={post}></PostCardCategory>
             );
           })}
         </S.PostCardContainer>
