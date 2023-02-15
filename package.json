@@ -8,6 +8,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.5",
     "axios": "^1.3.3",
+    "exoclick-react": "^1.1.1",
     "graphql": "^16.6.0",
     "next": "^13.1.6",
     "react": "^18.2.0",
