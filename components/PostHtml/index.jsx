@@ -25,11 +25,31 @@ export default function SlugPage({ post }) {
       if (index === 1) {
         return (
           <div className="my-div">
-            
+            <iframe
+              src="//a.exdynsrv.com/iframe.php?idzone=4914860&size=300x250"
+              width="300"
+              height="250"
+              scrolling="no"
+              marginwidth="0"
+              marginheight="0"
+              frameborder="0"
+            ></iframe>
           </div>
         );
       } else if (index === 6) {
-        return <div class="my-div">{scriptsLoaded && <></>}</div>;
+        return (
+          <div class="my-div">
+            <iframe
+              src="//a.exdynsrv.com/iframe.php?idzone=4914860&size=300x250"
+              width="300"
+              height="250"
+              scrolling="no"
+              marginwidth="0"
+              marginheight="0"
+              frameborder="0"
+            ></iframe>
+          </div>
+        );
       } else {
         return <div dangerouslySetInnerHTML={{ __html: newP }}></div>;
       }

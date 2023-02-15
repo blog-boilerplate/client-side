@@ -61,6 +61,7 @@ function MyApp({ Component, pageProps }) {
           name="exoclick-site-verification"
           content="39a5ab4f545e7fd0e213249948a375eb"
         ></meta>
+        <script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=4914886&capping=0"></script>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
