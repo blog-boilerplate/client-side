@@ -1,7 +1,6 @@
 import * as S from "./style";
 import Link from "next/link";
 import Image from "next/image";
-import AdBanner320X50 from "../AdBanner320x50";
 
 export default function Logo() {
   return (
@@ -16,9 +15,6 @@ export default function Logo() {
           />
         </S.Logo>
       </Link>
-      <div>
-        <AdBanner320X50 />
-      </div>
     </S.Container>
   );
 }

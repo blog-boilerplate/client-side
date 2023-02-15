@@ -34,23 +34,23 @@ export default function FooterSideBar({ select, setSelect, setKey }) {
     <>
       <S.Footer active={showButton}>
         {select == 2 ? (
-          <a href="/">
+          <Link href="/">
             <S.Icon className="select flash" onClick={() => setSelect(2)}>
               <div>
                 <Home />
                 <p>Home</p>
               </div>
             </S.Icon>
-          </a>
+          </Link>
         ) : (
-          <a href="/">
+          <Link href="/">
             <S.Icon className="flash" onClick={() => setSelect(2)}>
               <div>
                 <Home />
                 <p>Home</p>
               </div>
             </S.Icon>
-          </a>
+          </Link>
         )}
         {select == 1 ? (
           <Link href="/category">

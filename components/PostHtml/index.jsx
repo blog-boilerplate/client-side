@@ -1,22 +1,21 @@
 import * as S from "./style";
 import { useEffect, useRef, useState } from "react";
-import AdBanner from "../AdBanner";
 
 export default function SlugPage({ post }) {
-  useEffect(() => {
-    if (!banner2.current.firstChild) {
-      const script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src = `//www.effectivecreativeformat.com/ef586a90e010df50a4d583fde1621f70/invoke.js`;
-      script.onload = () => {
-        setScriptsLoaded(true);
-      };
+  // useEffect(() => {
+  //   if (!banner2.current.firstChild) {
+  //     const script = document.createElement("script");
+  //     script.type = "text/javascript";
+  //     script.src = `//www.effectivecreativeformat.com/ef586a90e010df50a4d583fde1621f70/invoke.js`;
+  //     script.onload = () => {
+  //       setScriptsLoaded(true);
+  //     };
 
-      if (banner2.current) {
-        banner2.current.append(script);
-      }
-    }
-  }, []);
+  //     if (banner2.current) {
+  //       banner2.current.append(script);
+  //     }
+  //   }
+  // }, []);
 
   const paragraphs = post.content.split(/<\/p>/);
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
@@ -26,11 +25,11 @@ export default function SlugPage({ post }) {
       if (index === 1) {
         return (
           <div className="my-div">
-            <AdBanner />
+            
           </div>
         );
       } else if (index === 6) {
-        return <div class="my-div">{scriptsLoaded && <AdBanner />}</div>;
+        return <div class="my-div">{scriptsLoaded && <></>}</div>;
       } else {
         return <div dangerouslySetInnerHTML={{ __html: newP }}></div>;
       }
@@ -42,9 +41,9 @@ export default function SlugPage({ post }) {
   return (
     <>
       {/* ... */}
-      <div ref={banner2}></div>
+      {/* <div ref={banner2}></div> */}
       <S.Article>{contentWithDiv}</S.Article>
-      <div ref={banner2}></div>
+      {/* <div ref={banner2}></div> */}
       {/* ... */}
     </>
   );
