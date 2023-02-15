@@ -6,6 +6,7 @@ import MyCookieConsent from "../components/MyCookieConsent";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Script from "next/script"
 
 import * as gtag from "../lib/gtag";
 import Analytics from "../components/Analytics";
@@ -61,7 +62,7 @@ function MyApp({ Component, pageProps }) {
           name="exoclick-site-verification"
           content="39a5ab4f545e7fd0e213249948a375eb"
         ></meta>
-        <script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=4914886&capping=0"></script>
+        <Script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=4914886&capping=0"></Script>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
