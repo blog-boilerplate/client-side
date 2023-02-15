@@ -8,11 +8,12 @@ import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
 import { useState, useEffect } from "react";
 import ButtonRender from "../components/ButtonRender";
-import Script from "next/script";
+import { useRouter } from "next/router";
 
 const apolloClient = initializeApollo();
 
 export default function Home({ posts }) {
+
   const [select, setSelect] = useState(2);
   const [displayCount, setDisplayCount] = useState(12);
 

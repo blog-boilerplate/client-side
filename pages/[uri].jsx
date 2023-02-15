@@ -5,10 +5,9 @@ import Space from "../components/Space";
 import Modal from "../components/Modal";
 import { gql } from "@apollo/client";
 import { initializeApollo } from "../utils/apollo";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import * as S from "../components/PostStyled";
 import PostHtml from "../components/PostHtml/index.jsx";
-
 const apolloClient = initializeApollo();
 
 export default function SlugPage({ post }) {
@@ -58,7 +57,6 @@ export default function SlugPage({ post }) {
           </div>
           <PostHtml post={post} />
         </S.Main>
-        <div id="container-7f564882f2c60b133fa3533d5617e840"></div>
         <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.PostContainer>

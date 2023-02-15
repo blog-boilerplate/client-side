@@ -3,12 +3,12 @@ import { Category } from "@styled-icons/boxicons-regular/Category";
 import { Place } from "@styled-icons/material-rounded/Place";
 import { SearchAlt } from "@styled-icons/boxicons-regular/SearchAlt";
 import { Home } from "@styled-icons/entypo/Home";
-import { PlusSquare} from "@styled-icons/boxicons-solid/PlusSquare";
+import { PlusSquare } from "@styled-icons/boxicons-solid/PlusSquare";
 import { BookInformation } from "@styled-icons/fluentui-system-filled/BookInformation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function FooterSideBar({ select, setSelect }) {
+export default function FooterSideBar({ select, setSelect, setKey }) {
   const [showButton, setShowButton] = useState(true);
 
   let lastScrollTop = 0;
@@ -34,23 +34,23 @@ export default function FooterSideBar({ select, setSelect }) {
     <>
       <S.Footer active={showButton}>
         {select == 2 ? (
-          <Link href="/">
+          <a href="/">
             <S.Icon className="select flash" onClick={() => setSelect(2)}>
               <div>
                 <Home />
                 <p>Home</p>
               </div>
             </S.Icon>
-          </Link>
+          </a>
         ) : (
-          <Link href="/">
+          <a href="/">
             <S.Icon className="flash" onClick={() => setSelect(2)}>
               <div>
                 <Home />
                 <p>Home</p>
               </div>
             </S.Icon>
-          </Link>
+          </a>
         )}
         {select == 1 ? (
           <Link href="/category">
