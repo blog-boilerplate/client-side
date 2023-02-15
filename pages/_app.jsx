@@ -62,6 +62,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         />
+        <script async type="text/javascript" src="https://a.exdynsrv.com/ad-provider.js"></script>
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
