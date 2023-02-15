@@ -15,6 +15,17 @@ export default function Logo() {
           />
         </S.Logo>
       </Link>
+      <div>
+        <iframe
+          src="//a.exdynsrv.com/iframe.php?idzone=4914894&size=900x250"
+          width="900"
+          height="250"
+          scrolling="no"
+          marginwidth="0"
+          marginheight="0"
+          frameborder="0"
+        ></iframe>
+      </div>
     </S.Container>
   );
 }

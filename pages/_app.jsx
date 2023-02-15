@@ -6,7 +6,7 @@ import MyCookieConsent from "../components/MyCookieConsent";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Script from "next/script"
+import Script from "next/script";
 
 import * as gtag from "../lib/gtag";
 import Analytics from "../components/Analytics";
@@ -36,10 +36,6 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
         <meta
           name="description"
           content="Viaje com a gente pelo mundo! Nossos relatos de viagem incluem dicas incríveis, belas fotos e experiências únicas. Junte-se a nós em uma jornada para explorar culturas, sabores e paisagens exóticas. Inspire-se e planeje sua próxima aventura."
@@ -62,7 +58,10 @@ function MyApp({ Component, pageProps }) {
           name="exoclick-site-verification"
           content="39a5ab4f545e7fd0e213249948a375eb"
         ></meta>
-        <Script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=4914886&capping=0"></Script>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
