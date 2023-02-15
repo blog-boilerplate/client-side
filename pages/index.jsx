@@ -8,7 +8,6 @@ import * as S from "../components/IndexStyled";
 import { initializeApollo } from "../utils/apollo";
 import { useState, useEffect } from "react";
 import ButtonRender from "../components/ButtonRender";
-import { RecommendationWidget } from "exoclick-react";
 
 const apolloClient = initializeApollo();
 
@@ -32,7 +31,6 @@ export default function Home({ posts }) {
             return <PostCard key={index} post={post} />;
           })}
         </S.PostCardContainer>
-        <RecommendationWidget zoneId="4914922" />
         {displayCount < posts.length && (
           <ButtonRender handleLoadMore={handleLoadMore} />
         )}
