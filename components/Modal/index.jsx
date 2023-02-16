@@ -33,7 +33,7 @@ export default function ConfirmModal({ setModal }) {
         }
       )
       .then(() => {
-        localStorage.setItem("emailSend", true)
+        localStorage.setItem("emailSend", true);
         toast.success("E-mail recebido!");
         setCheckModal(false);
       })
@@ -52,8 +52,8 @@ export default function ConfirmModal({ setModal }) {
             <S.Info>
               <S.InfoContainer>
                 <p style={{ fontWeight: "600", color: "darkgreen" }}>
-                  Quer receber o livro 10 lugares para conhecer antes de morrer
-                  de forma gratuita?
+                  Quer receber o 10 lugares incríveis para conhecer antes de
+                  morrer de forma gratuita?
                 </p>
                 <img src="https://i.imgur.com/9f3erXH.png" alt="" />
                 <p style={{ marginBottom: "0.1rem" }}>
