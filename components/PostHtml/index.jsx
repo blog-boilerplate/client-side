@@ -1,7 +1,4 @@
 import * as S from "./style";
-import { useEffect, useRef, useState } from "react";
-import { Outstream } from "exoclick-react";
-
 export default function SlugPage({ post }) {
   // useEffect(() => {
   //   if (!banner2.current.firstChild) {
@@ -26,44 +23,18 @@ export default function SlugPage({ post }) {
       if (index === 1) {
         return (
           <div className="my-div">
-            <iframe
-              src="//a.exdynsrv.com/iframe.php?idzone=4914860&size=300x250"
-              width="300"
-              height="250"
-              scrolling="no"
-              marginwidth="0"
-              marginheight="0"
-              frameborder="0"
-            ></iframe>
+
           </div>
         );
       } else if (index === 6) {
         return (
           <div class="my-div">
-            <iframe
-              src="//a.exdynsrv.com/iframe.php?idzone=4914866&size=300x250"
-              width="300"
-              height="250"
-              scrolling="no"
-              marginwidth="0"
-              marginheight="0"
-              frameborder="0"
-            ></iframe>
-            <Outstream zoneId="4914948" maxWidth={300} />
           </div>
         );
       } else if (index === 9) {
         return (
           <div class="my-div">
-            <iframe
-              src="//a.exdynsrv.com/iframe.php?idzone=4914962&size=300x250"
-              width="300"
-              height="250"
-              scrolling="no"
-              marginwidth="0"
-              marginheight="0"
-              frameborder="0"
-            ></iframe>
+
           </div>
         );
       } else {
