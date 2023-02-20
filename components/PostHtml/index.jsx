@@ -22,19 +22,23 @@ export default function SlugPage({ post }) {
       const newP = `${p}</p>`;
       if (index === 1) {
         return (
-          <div className="my-div">
-
+          <div>
+            <div className="my-div"></div>
+            <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
       } else if (index === 6) {
         return (
-          <div class="my-div">
+          <div>
+            <div className="my-div"></div>
+            <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
       } else if (index === 9) {
         return (
-          <div class="my-div">
-
+          <div>
+            <div className="my-div"></div>
+            <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
       } else {
