@@ -14,6 +14,7 @@ export default function SlugPage({ post }) {
   const [select, setSelect] = useState(6);
   const [modal, setModal] = useState(false);
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
+  const instagramLink = post.content.match(/<div.*?class="instagram-post".*?>(.*?)<\/div>/)?.[1] || "";
 
   useEffect(() => {
     const emailSend = localStorage.getItem("emailSend");
@@ -22,11 +23,13 @@ export default function SlugPage({ post }) {
         setTimeout(() => {
           setModal(true);
         }, 20000);
-    }
-  }, []);
+      }
+    }, []);
+    
+    console.log(instagramLink)
 
-  return (
-    <>
+    return (
+      <>
       {modal && <Modal setModal={setModal} />}
       <Logo />
       <S.PostContainer>
@@ -55,7 +58,7 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-          <PostHtml post={post} />
+          <PostHtml post={post} instagramLink={instagramLink}/>
         </S.Main>
         <Space />
         <FooterSideBar select={select} setSelect={setSelect} />

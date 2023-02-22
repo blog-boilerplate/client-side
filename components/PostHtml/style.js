@@ -7,6 +7,9 @@ export const Article = styled.article`
   flex-direction: column;
   max-width: 650px;
 
+  .instagram-post {
+    max-width: 320px;
+  }
 
   h2 {
     color: #2f2f2f;
