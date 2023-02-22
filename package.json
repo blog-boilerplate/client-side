@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-scroll": "^1.8.9",
+    "react-social-media-embed": "^2.3.4",
     "styled-components": "^5.3.6",
     "styled-icons": "^10.47.0",
     "styled-media-query": "^2.1.2"

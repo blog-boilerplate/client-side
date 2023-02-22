@@ -1,4 +1,6 @@
 import * as S from "./style";
+import { InstagramEmbed } from "react-social-media-embed";
+
 export default function SlugPage({ post }) {
   // useEffect(() => {
   //   if (!banner2.current.firstChild) {
@@ -23,7 +25,14 @@ export default function SlugPage({ post }) {
       if (index === 1) {
         return (
           <div>
-            <div className="my-div"></div>
+            <div className="my-div">
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <InstagramEmbed
+                  url="https://www.instagram.com/p/CUbHfhpswxt/"
+                  width={320}
+                />
+              </div>
+            </div>
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
