@@ -38,7 +38,7 @@ export default function SlugPage({ post, instagramLink }) {
                   <InstagramEmbed
                     url={instagramLink}
                     width="100%"
-                    captioned={false}
+                    captioned={true}
                   />
                 </div>
               )}
