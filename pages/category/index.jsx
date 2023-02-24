@@ -6,6 +6,7 @@ import { initializeApollo } from "../../utils/apollo";
 import { useState } from "react";
 import CategoriesCard from "../../components/CategoriesCard";
 import Logo from "../../components/Logo";
+import Space from "../../components/Space";
 
 const apolloClient = initializeApollo();
 
@@ -23,8 +24,9 @@ export default function Home({ posts }) {
           {posts?.map((post, index) => {
             return <CategoriesCard key={index} post={post}></CategoriesCard>;
           })}
+          <CategoriesCard />
+          <CategoriesCard />
         </S.PostCardContainer>
-
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.Container>
     </>
@@ -34,7 +36,7 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const GET_CATEGORIES = gql`
     query GetAllCategory {
-      categories {
+      categories(first: 100) {
         nodes {
           name
           uri

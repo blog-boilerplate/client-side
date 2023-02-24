@@ -1,15 +1,14 @@
 import styled, { css } from "styled-components";
 
 export const ContainerCard = styled.div`
-  ${({ city }) => css`
+  ${({ city, desativado }) => css`
     width: 470px;
     height: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 1rem;
-    cursor: pointer;
-      no-repeat center;
+    cursor: ${desativado ? "default" : "pointer"};
     background: ${
       city == "França" &&
       "url(https://i.imgur.com/NSEutJw.jpg) no-repeat center"
@@ -29,6 +28,10 @@ export const ContainerCard = styled.div`
     background: ${
       city == "Inglaterra" &&
       "url(https://i.imgur.com/EYyDI5C.jpg) no-repeat center"
+    };
+    background: ${
+      city == "Suíça" &&
+      "url(https://i.imgur.com/uDgoAiG.jpg) no-repeat center"
     };
       border-radius: 10px;
     background-size: cover;
