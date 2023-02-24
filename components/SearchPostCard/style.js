@@ -22,7 +22,7 @@ const rightToLeft = keyframes`
 export const Container = styled.div`
   ${({ delay }) => css`
     width: 100%;
-    height: 50px;
+    height: ;
     background-color: #f2f2f2;
     display: flex;
     position: relative;

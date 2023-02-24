@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function SearchPostCard({ title, img, delay, url }) {
+  const decodedTitle = new DOMParser().parseFromString(title, "text/html").body.textContent;
 
   return (
     <Link href={url}>
@@ -11,7 +12,7 @@ export default function SearchPostCard({ title, img, delay, url }) {
           <S.ImageContainer>
             <img src={img} alt="" />
           </S.ImageContainer>
-          <S.Title>{title}</S.Title>
+          <S.Title>{decodedTitle}</S.Title>
         </S.Container>
       </S.Ul>
     </Link>
