@@ -2,7 +2,9 @@ import * as S from "./style";
 import Link from "next/link";
 
 export default function CategoriesCard({ post }) {
-
+  if (post) {
+    console.log(post.name);
+  }
 
   return (
     <>
@@ -14,8 +16,8 @@ export default function CategoriesCard({ post }) {
         </Link>
       ) : (
         <S.ContainerCard desativado>
-            <S.CategoryName></S.CategoryName>
-          </S.ContainerCard>
+          <S.CategoryName></S.CategoryName>
+        </S.ContainerCard>
       )}
     </>
   );
