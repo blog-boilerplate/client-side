@@ -35,7 +35,7 @@ export default function InputSearch({ value, change }) {
     <S.Container>
         <S.Input
           name="search"
-          placeholder="Pesquisar..."
+          placeholder="Quer ir para..."
           id="search"
           value={value}
           onChange={handleInputChange}
