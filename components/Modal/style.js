@@ -162,9 +162,16 @@ export const InputFile = styled.input`
 export const Info = styled.div`
   width: 100%;
 
+  h2 {
+    color: #30587f;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 1.5rem;
+  }
+
   p {
     padding: 0 0.5rem;
-    font-size: 10pt;
+    font-size: 13px;
     color: black;
   }
 `;
@@ -174,19 +181,20 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -1.5rem;
 
   img {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     width: 80px;
   }
   margin-bottom: 1.5rem;
 `;
 
-export const MessageModal = styled.div``
+export const MessageModal = styled.div``;
 
 export const MessagePragraph = styled.p`
-  color: black!important;
+  color: black !important;
   padding: 0.5rem 0.5rem 2.2rem 0.5rem;
-  font-size: 13px!important;
-`
+  font-size: 13px !important;
+`;

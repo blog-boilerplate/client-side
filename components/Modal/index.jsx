@@ -6,7 +6,6 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 export default function ConfirmModal({ setModal }) {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [checkModal, setCheckModal] = useState(true);
 
@@ -19,7 +18,6 @@ export default function ConfirmModal({ setModal }) {
       .post(
         "https://formsubmit.co/ajax/lifenomadeleitores@hotmail.com",
         {
-          nome: name,
           email: email,
           _cc: "mateeusof@hotmail.com",
         },
@@ -51,33 +49,21 @@ export default function ConfirmModal({ setModal }) {
           <>
             <S.Info>
               <S.InfoContainer>
+                <h2>O MELHOR QUE EXITE PARA SER VISTO E APRECIADO</h2>
                 <p style={{ fontWeight: "600", color: "darkgreen" }}>
-                  Quer receber o 10 lugares incríveis para conhecer antes de
-                  morrer de forma gratuita?
+                  Quer receber o ebook "10 LUGARES INCRÍVEIS PARA CONHECER ANTES DE MORRER" de forma gratuita?
                 </p>
-                <img src="https://i.imgur.com/9f3erXH.png" alt="" />
+                <img src="https://i.imgur.com/HWDQPV4.jpg" alt="capa do ebook" />
                 <p style={{ marginBottom: "0.1rem" }}>
-                  Se você adora ler sobre lugares e culturas diferentes vai se
-                  deliciar com essa extraordinária seleção do que existe de
-                  melhor para ser visto e apreciado!
+                  Você não vai querer morrer sem ao menos saber que esses
+                  lugares exitem né?
                 </p>
               </S.InfoContainer>
               <p style={{ color: "green" }}>
-                Informe seus dados e receba agora o eBook
+                Informe seu e-mail e acesse agora o eBook
               </p>
             </S.Info>
             <S.ButtonsContainer>
-              <S.Input
-                required
-                type="text"
-                placeholder="Seu nome"
-                name="nome"
-                value={name}
-                autoComplete="off"
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-              />
               <input type="hidden" name="_autoresponse" value="Valeu peituda" />
               <S.Input
                 type="email"
@@ -90,12 +76,8 @@ export default function ConfirmModal({ setModal }) {
                 }}
               />
             </S.ButtonsContainer>
-            <p>* preencha o formulário para liberar o botão</p>
-            <button
-              disabled={!name || !emailLegth}
-              type="submit"
-              onClick={handleSubmit}
-            >
+            <p>* coloque seu e-mail para liberar o botão</p>
+            <button disabled={!emailLegth} type="submit" onClick={handleSubmit}>
               Receber meu eBook
             </button>
           </>
