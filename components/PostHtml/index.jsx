@@ -29,7 +29,7 @@ export default function SlugPage({ post, instagramLink }) {
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
-      } else if (index === 3) {
+      } else if (index === 2) {
         return (
           <div>
             <div className="my-div">
