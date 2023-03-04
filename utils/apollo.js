@@ -11,7 +11,7 @@ let apolloClient;
 function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === "undefined",
-    link: new HttpLink({ uri: "http://suriblogcms.online/graphql" }),
+    link: new HttpLink({ uri: "https://lifenomade.suriblogcms.online/graphql" }),
     cache: new InMemoryCache(),
   });
 }
