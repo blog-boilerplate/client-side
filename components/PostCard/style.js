@@ -6,8 +6,6 @@ export const PostCard = styled.div`
     height: 185.5px;
     background-color: black;
     border-radius: 7px;
-    background: url(${imgUrl}) no-repeat center;
-    background-size: cover;
     position: relative;
   `}
 `;
