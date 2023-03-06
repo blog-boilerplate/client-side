@@ -12,6 +12,7 @@ export default function Logo() {
             src="/lifenomade-icon.png"
             width={1389}
             height={318}
+            priority
             alt="logo-life-nomade"
           />
         </S.Logo>
