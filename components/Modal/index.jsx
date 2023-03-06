@@ -49,7 +49,7 @@ export default function ConfirmModal({ setModal }) {
           <>
             <S.Info>
               <S.InfoContainer>
-                <h2>O MELHOR QUE EXITE PARA SER VISTO E APRECIADO</h2>
+                <h2>O MELHOR QUE EXISTE PARA SER VISTO E APRECIADO</h2>
                 <p style={{ fontWeight: "600", color: "darkgreen" }}>
                   Quer receber o ebook "10 LUGARES INCRÍVEIS PARA CONHECER ANTES DE MORRER" de forma gratuita?
                 </p>
