@@ -25,7 +25,9 @@ export default function SlugPage({ post, instagramLink }) {
       if (index === 1) {
         return (
           <div>
-            <div className="my-div"></div>
+            <div className="my-div">
+              <div id="ezoic-pub-ad-placeholder-105"> </div>
+            </div>
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
@@ -46,18 +48,40 @@ export default function SlugPage({ post, instagramLink }) {
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
           </div>
         );
+      } else if (index === 3) {
+        return (
+          <div>
+            <div dangerouslySetInnerHTML={{ __html: newP }}></div>
+            <div className="my-div">
+              <div id="ezoic-pub-ad-placeholder-106"> </div>
+            </div>
+          </div>
+        );
+      } else if (index === 5) {
+        return (
+          <div>
+            <div dangerouslySetInnerHTML={{ __html: newP }}></div>
+            <div className="my-div">
+              <div id="ezoic-pub-ad-placeholder-111"> </div>
+            </div>
+          </div>
+        );
       } else if (index === 6) {
         return (
           <div>
-            <div className="my-div"></div>
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
+            <div className="my-div">
+              <div id="ezoic-pub-ad-placeholder-112"> </div>
+            </div>
           </div>
         );
-      } else if (index === 9) {
+      } else if (index === 7) {
         return (
           <div>
-            <div className="my-div"></div>
             <div dangerouslySetInnerHTML={{ __html: newP }}></div>
+            <div className="my-div">
+              <div id="ezoic-pub-ad-placeholder-113"> </div>
+            </div>
           </div>
         );
       } else {

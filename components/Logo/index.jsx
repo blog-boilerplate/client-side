@@ -15,6 +15,7 @@ export default function Logo() {
             priority
             alt="logo-life-nomade"
           />
+          <div id="ezoic-pub-ad-placeholder-107"> </div>
         </S.Logo>
       </Link>
       <MediaMatch customGreaterThan="desktop">

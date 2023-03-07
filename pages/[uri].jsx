@@ -14,7 +14,9 @@ export default function SlugPage({ post }) {
   const [select, setSelect] = useState(6);
   const [modal, setModal] = useState(false);
   const firstParagraph = post.content.match(/<p>(.*?)<\/p>/)?.[1] || "";
-  const instagramLink = post.content.match(/<div.*?class="instagram-post".*?>(.*?)<\/div>/)?.[1] || "";
+  const instagramLink =
+    post.content.match(/<div.*?class="instagram-post".*?>(.*?)<\/div>/)?.[1] ||
+    "";
 
   useEffect(() => {
     const emailSend = localStorage.getItem("emailSend");
@@ -23,13 +25,13 @@ export default function SlugPage({ post }) {
         setTimeout(() => {
           setModal(true);
         }, 20000);
-      }
-    }, []);
-    
-    console.log(instagramLink)
+    }
+  }, []);
 
-    return (
-      <>
+  console.log(instagramLink);
+
+  return (
+    <>
       {modal && <Modal setModal={setModal} />}
       <Logo />
       <S.PostContainer>
@@ -58,8 +60,12 @@ export default function SlugPage({ post }) {
               🗓️ &nbsp;&nbsp;{new Date(post.date).toLocaleDateString()}
             </S.Date>
           </div>
-          <PostHtml post={post} instagramLink={instagramLink}/>
+          <div id="ezoic-pub-ad-placeholder-104"> </div>
+          <div id="ezoic-pub-ad-placeholder-108"> </div>
+          <PostHtml post={post} instagramLink={instagramLink} />
+          <div id="ezoic-pub-ad-placeholder-109"> </div>
         </S.Main>
+        <div id="ezoic-pub-ad-placeholder-110"> </div>
         <Space />
         <FooterSideBar select={select} setSelect={setSelect} />
       </S.PostContainer>
