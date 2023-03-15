@@ -1,6 +1,5 @@
 import { CloseOutline } from "@styled-icons/evaicons-outline/CloseOutline";
 import { useState } from "react";
-import { Head } from "next/document";
 import * as S from "./style";
 import axios from "axios";
 import toast from "react-hot-toast";
